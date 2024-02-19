@@ -5,16 +5,156 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ca95ec2f-f148-430c-bbdc-9b2267fe3d77" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/.dylibs/libXau.6.0.0.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/.dylibs/libbrotlicommon.1.1.0.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/.dylibs/libbrotlidec.1.1.0.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/.dylibs/libfreetype.6.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/.dylibs/libharfbuzz.0.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/.dylibs/libjpeg.62.4.0.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/.dylibs/liblcms2.2.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/.dylibs/liblzma.5.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/.dylibs/libopenjp2.2.5.0.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/.dylibs/libpng16.16.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/.dylibs/libsharpyuv.0.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/.dylibs/libtiff.6.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/.dylibs/libwebp.7.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/.dylibs/libwebpdemux.2.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/.dylibs/libwebpmux.3.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/.dylibs/libxcb.1.1.0.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/.dylibs/libz.1.3.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/BdfFontFile.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/BlpImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/BmpImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/BufrStubImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/ContainerIO.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/CurImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/DcxImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/DdsImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/EpsImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/ExifTags.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/FitsImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/FliImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/FontFile.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/FpxImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/FtexImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/GbrImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/GdImageFile.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/GifImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/GimpGradientFile.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/GimpPaletteFile.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/GribStubImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/Hdf5StubImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/IcnsImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/IcoImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/ImImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/Image.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/ImageChops.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/ImageCms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/ImageColor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/ImageDraw.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/ImageDraw2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/ImageEnhance.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/ImageFile.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/ImageFilter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/ImageFont.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/ImageGrab.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/ImageMath.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/ImageMode.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/ImageMorph.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/ImageOps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/ImagePalette.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/ImagePath.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/ImageQt.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/ImageSequence.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/ImageShow.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/ImageStat.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/ImageTk.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/ImageTransform.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/ImageWin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/ImtImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/IptcImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/Jpeg2KImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/JpegImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/JpegPresets.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/McIdasImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/MicImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/MpegImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/MpoImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/MspImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/PSDraw.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/PaletteFile.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/PalmImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/PcdImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/PcfFontFile.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/PcxImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/PdfImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/PdfParser.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/PixarImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/PngImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/PpmImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/PsdImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/PyAccess.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/QoiImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/SgiImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/SpiderImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/SunImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/TarIO.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/TgaImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/TiffImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/TiffTags.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/WalImageFile.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/WebPImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/WmfImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/XVThumbImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/XbmImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/XpmImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/__main__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/_binary.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/_deprecate.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/_imaging.cpython-312-darwin.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/_imagingcms.cpython-312-darwin.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/_imagingcms.pyi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/_imagingft.cpython-312-darwin.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/_imagingft.pyi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/_imagingmath.cpython-312-darwin.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/_imagingmorph.cpython-312-darwin.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/_imagingtk.cpython-312-darwin.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/_tkinter_finder.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/_typing.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/_util.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/_version.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/_webp.cpython-312-darwin.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/PIL/features.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/pillow-10.2.0.dist-info/INSTALLER" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/pillow-10.2.0.dist-info/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/pillow-10.2.0.dist-info/METADATA" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/pillow-10.2.0.dist-info/RECORD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/pillow-10.2.0.dist-info/REQUESTED" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/pillow-10.2.0.dist-info/WHEEL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/pillow-10.2.0.dist-info/top_level.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/pillow-10.2.0.dist-info/zip-safe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/Game_Recommendation_System.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Game_Recommendation_System.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Game_Recommendation_System/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Game_Recommendation_System/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -33,6 +173,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Django Server.Game_Recommendation_System.executor": "Run",
     "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -42,6 +183,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -53,6 +195,7 @@
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="Game_Recommendation_System.settings" />
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
@@ -90,6 +233,7 @@
       <workItem from="1708369514366" duration="8000" />
       <workItem from="1708369835348" duration="103000" />
       <workItem from="1708369959427" duration="682000" />
+      <workItem from="1708374046663" duration="2818000" />
     </task>
     <servers />
   </component>

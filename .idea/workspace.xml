@@ -5,16 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ca95ec2f-f148-430c-bbdc-9b2267fe3d77" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myapp/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myapp/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myapp/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myapp/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myapp/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myapp/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myapp/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/Game_Recommendation_System.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Game_Recommendation_System.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game_Recommendation_System/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Game_Recommendation_System/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -36,7 +45,9 @@
     "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "LoginSignup",
+    "last_opened_file_path": "D:/pycharmproject/djangoProject/Game_Recommendation_System",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -48,13 +59,14 @@
   <component name="RunManager">
     <configuration name="Game_Recommendation_System" type="Python.DjangoServer" factoryName="Django server">
       <module name="Game_Recommendation_System" />
-      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="Game_Recommendation_System.settings" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="D:\pycharmproject\djangoProject\Game_Recommendation_System\venv\Scripts\python.exe" />
+      <option name="SDK_NAME" value="Python 3.11 (Game_Recommendation_System)" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -90,6 +102,8 @@
       <workItem from="1708369514366" duration="8000" />
       <workItem from="1708369835348" duration="103000" />
       <workItem from="1708369959427" duration="682000" />
+      <workItem from="1708536778258" duration="468000" />
+      <workItem from="1708537276881" duration="1286000" />
     </task>
     <servers />
   </component>

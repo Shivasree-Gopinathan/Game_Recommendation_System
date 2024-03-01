@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        body {
+            background-color: #f0f0f0; /* Light gray background color */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://img.freepik.com/free-photo/person-wearing-futuristic-virtual-reality-glasses-gaming_23-2151133123.jpg?t=st=1708453628~exp=1708457228~hmac=e243d17d172d48c80429803e1b03d0658f32ecbd894c8c2ea6f57676fc0087b9&w=1060');
+        }
+
+        .container {
+            background-color: #fff; /* White container background color */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+            max-width: 400px;
+            margin: 50px auto; /* Center the container */
+            padding: 30px;
+        }
+
+        h1 {
+            color: #333; /* Dark gray text color */
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #666; /* Medium gray text color */
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc; /* Light gray border */
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        button[type="submit"] {
+            background-color: #007bff; /* Blue button background color */
+            color: #fff; /* White text color */
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 100%;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sign Up</h1>
+        <form method="post">
+            {% csrf_token %}
+            <label for="id_username">Username:</label>
+            {{ form.username }}
+            <label for="id_email">Email:</label>
+            {{ form.email }}
+            <label for="id_password1">Password:</label>
+            {{ form.password1 }}
+            <label for="id_password2">Password confirmation:</label>
+            {{ form.password2 }}
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+</body>
+</html>

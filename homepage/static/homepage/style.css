@@ -1,0 +1,86 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Netflix background color */
+    color: #fff;
+    padding: 20px;
+}
+
+.header {
+    background-color: #000; /* Netflix black background color */
+    color: #e50914; /* Netflix red color */
+    text-align: center;
+    padding: 20px 0; /* Adjust padding as needed */
+}
+
+.header h1 {
+    font-size: 24px; /* Adjust font size as needed */
+    margin: 0;
+}
+.container{
+    padding: 20px;
+}
+
+.game-container {
+    /*grid-template-columns: repeat(4, 1fr); !* Display four games in one row *!*/
+    grid-gap: 30px; /* Reduced gap between games */
+    /*flex: 0 0 calc(25% - 20px); !* Adjust the width of each card *!*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* styles.css */
+.game-card {
+    position: relative;
+    background-color: #222; /* Darker background color */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; /* Add transition effect */
+    height: 300px; /* Set a fixed height for uniformity */
+    width: 300px;
+}
+
+.game-card:hover {
+    transform: scale(1.1); /* Enlarge on hover */
+}
+
+.game-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background color */
+    padding: 10px;
+    color: #fff; /* Text color */
+    transition: opacity 0.3s ease; /* Add transition effect */
+    opacity: 0; /* Initially hidden */
+}
+
+.game-card:hover .game-info {
+    opacity: 1; /* Display on hover */
+}
+
+
+.game-card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px; /* Apply border-radius to maintain rounded corners */
+}
+
+.game-info p {
+    margin: 5px 0;
+    font-size: 16px;
+    text-align: center; /* Center the title */
+}
+
+.game-info h2 {
+    margin: 5px 0;
+    font-size: 20px;
+    text-align: center; /* Center the title */
+}
+
+.release-date {
+    font-size: 14px;
+}

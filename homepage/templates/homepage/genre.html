@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse by Genre</title>
+</head>
+<body>
+    <h1>Browse by Genre</h1>
+    <div class="genre-section">
+        {% for genre in unique_genres %}
+            <h2>{{ genre }}</h2>
+            <div class="flashcards">
+                {% for game in games %}
+                    {% if game.genre == genre %}
+                        <div class="flashcard">
+                            <img src="{{ game.image.url }}" alt="{{ game.title }}">
+                            <h3>{{ game.title }}</h3>
+                            <p>{{ game.description }}</p>
+                            <!-- Add more details as needed -->
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        {% endfor %}
+    </div>
+</body>
+</html>

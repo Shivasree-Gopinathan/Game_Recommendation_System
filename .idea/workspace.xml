@@ -5,60 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ca95ec2f-f148-430c-bbdc-9b2267fe3d77" name="Changes" comment="Created requirements.txt file">
-      <change afterPath="$PROJECT_DIR$/dataset.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dataset_generator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/game/migrations/0002_platform_remove_game_platform_game_platforms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/game/migrations/0003_alter_game_image.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/game/migrations/0004_alter_game_image.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/A_Plague_Tale_Innocence_image.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/Celeste_image.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/Cuphead_image.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/Disco_Elysium_image.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/Disco_Elysium_image_6Hiu6X3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/Elden_Ring_image.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/Firewatch_image.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/Grand_Theft_Auto_V_image.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/Gris_image.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/Hades_image.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/Hollow_Knight_image.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/Hollow_Knight_image_zT11VMB.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/Inside_image.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/Metal_Gear_Solid_V_The_Phantom_Pain_image.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/Metal_Gear_Solid_V_The_Phantom_Pain_image_kvrThBx.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/Minecraft_image.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/Monster_Hunter_World_image.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/NieR_Automata_image.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/Outer_Wilds_image.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/Outer_Wilds_image_Lpj7ukA.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/Portal_2_image.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/Portal_2_image_vpLL1kE.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/Red_Dead_Redemption_2_Online_image.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/Red_Dead_Redemption_2_image.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/Red_Dead_Redemption_2_image_aUzaqOV.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/Sekiro_Shadows_Die_Twice_image.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/Stardew_Valley_image.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/Stardew_Valley_image_C1RNYF1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/Stardew_Valley_image_PH5vF7a.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/Stardew_Valley_image_UjzLFpC.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/Stray_image.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/Super_Mario_Odyssey_image.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/Super_Metroid_image.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/The_Elder_Scrolls_V_Skyrim_image.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/The_Last_Guardian_image.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/The_Legend_of_Zelda_Breath_of_the_Wild_image.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/The_Legend_of_Zelda_Breath_of_the_Wild_image_mRWNm8M.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/The_Legend_of_Zelda_Tears_of_the_Kingdom_image.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/The_Witcher_3_Wild_Hunt_-_Blood_and_Wine_image.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/The_Witcher_3_Wild_Hunt_image.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/The_Witcher_3_Wild_Hunt_image_Swk3giD.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/Undertale_image.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/What_Remains_of_Edith_Finch_image.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Game_Recommendation_System.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Game_Recommendation_System.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homepage/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homepage/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homepage/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homepage/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homepage/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homepage/static/homepage/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homepage/templates/homepage/genre.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homepage/templates/homepage/homepage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homepage/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homepage/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game_Recommendation_System/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Game_Recommendation_System/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game_Recommendation_System/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Game_Recommendation_System/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,6 +33,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -92,12 +54,15 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;Django Server.Game_Recommendation_System.executor&quot;: &quot;Run&quot;,
     &quot;Python.data.executor&quot;: &quot;Run&quot;,
+    &quot;Python.dataset_generator.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Home__Page__new&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/shiva/PycharmProjects/winter2024/Game_Recommendation_System&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -107,7 +72,13 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\shiva\PycharmProjects\winter2024\Game_Recommendation_System\homepage" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\shiva\PycharmProjects\winter2024\Game_Recommendation_System\homepage\templates\homepage" />
+      <recent name="C:\Users\shiva\PycharmProjects\winter2024\Game_Recommendation_System" />
+      <recent name="C:\Users\shiva\PycharmProjects\winter2024\Game_Recommendation_System\media" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -145,7 +116,7 @@
         <env name="DJANGO_SETTINGS_MODULE" value="Game_Recommendation_System.settings" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="SDK_NAME" value="Python 3.9 (Game_Recommendation_System)" />
+      <option name="SDK_NAME" value="Python 3.12 (Game_Recommendation_System)" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -193,6 +164,8 @@
       <workItem from="1708893060876" duration="709000" />
       <workItem from="1708893773307" duration="193000" />
       <workItem from="1708895047314" duration="3934000" />
+      <workItem from="1709591273575" duration="1395000" />
+      <workItem from="1709613743741" duration="6153000" />
     </task>
     <servers />
   </component>
@@ -215,5 +188,8 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Game_Recommendation_System$data.coverage" NAME="data Coverage Results" MODIFIED="1708895764244" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/game" />
+    <SUITE FILE_PATH="coverage/Game_Recommendation_System$urls.coverage" NAME="urls Coverage Results" MODIFIED="1709489806325" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Game_Recommendation_System" />
+    <SUITE FILE_PATH="coverage/Game_Recommendation_System$dataset_generator.coverage" NAME="dataset_generator Coverage Results" MODIFIED="1709492813186" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/game" />
+    <SUITE FILE_PATH="coverage/Game_Recommendation_System$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1709490286801" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../carsite/.venv/Game_Recommendation_System/Lib/site-packages/django/conf" />
   </component>
 </project>

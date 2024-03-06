@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'game/style.css' %}"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ game.title }} Details - GAMEZONE</title>
+</head>
+<body>
+    <div class="header">
+        <h1>GAMEZONE</h1>
+    </div>
+    <div class="game-details">
+        <div class="hero">
+            <img src="{{ game.image.url }}" alt="{{ game.title }}">
+            <div class="game-content">
+                <h1>{{ game.title }}</h1>
+                <div class="game-detail-equality">
+                    <p class="game-detail-heading">Genre</p>
+                    <p class="space">:</p>
+                    <p>{{ game.genre }}</p>
+                </div>
+                <br>
+                <div class="game-detail-equality">
+                    <p class="game-detail-heading">Platform</p>
+                    <p class="space">:</p>
+                    <p>{{ game.platforms }}</p>
+                </div>
+                <br>
+                <div class="game-detail-equality">
+                    <p class="game-detail-heading">Release Date</p>
+                    <p class="space">:</p>
+                    <p>{{ game.release_date }}</p>
+                </div>
+                <br>
+                <div class="game-detail-equality">
+                    <p class="game-detail-heading">Developer</p>
+                    <p class="space">:</p>
+                    <p>{{ game.developer }}</p>
+                </div>
+                <br>
+                <div class="game-detail-equality">
+                    <p class="game-detail-heading">Publisher</p>
+                    <p class="space">:</p>
+                    <p>{{ game.publisher }}</p>
+                </div>
+                <br>
+                <div class="game-detail-equality">
+                    <p id="description">Description</p>
+                    <p id="space-description">:</p>
+                    <p>{{ game.description }}</p>
+                </div>
+                <br>
+                <div class="game-detail-equality">
+                    <p class="game-detail-heading">Average Rating</p>
+                    <p class="space">:</p>
+                    <p>{{ game.avg_rating }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

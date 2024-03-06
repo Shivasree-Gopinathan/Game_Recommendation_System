@@ -1,0 +1,14 @@
+<changelist name="Uncommitted_changes_before_Checkout_at_2024-03-05,_11_31 p_m__[Changes]" date="1709699520265" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2024-03-05,_11_31 p_m__[Changes]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Checkout at 2024-03-05, 11:31 p.m. [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".venv/lib/python3.12/site-packages/charset_normalizer/md.cpython-312-darwin.so" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2024-03-05,_11_31 p_m__[Changes]/md.cpython-312-darwin.so" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".venv/lib/python3.12/site-packages/charset_normalizer/md__mypyc.cpython-312-darwin.so" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2024-03-05,_11_31 p_m__[Changes]/md__mypyc.cpython-312-darwin.so" />
+  </binary>
+</changelist>

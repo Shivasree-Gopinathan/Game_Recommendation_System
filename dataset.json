@@ -63,7 +63,14 @@
   {
     "title": "Hollow Knight",
     "genre": "Metroidvania",
-    "platform": ["Windows PC", "macOS", "Linux", "PlayStation 4", "Xbox One", "Nintendo Switch"],
+    "platform": [
+      "Windows PC",
+      "macOS",
+      "Linux",
+      "PlayStation 4",
+      "Xbox One",
+      "Nintendo Switch"
+    ],
     "release_date": "2017-02-24",
     "developer": "Team Cherry",
     "publisher": "Team Cherry",
@@ -74,11 +81,7 @@
   {
     "title": "Hades",
     "genre": "Action RPG",
-    "platform": [
-      "Windows PC",
-      "macOS",
-      "Nintendo Switch"
-    ],
+    "platform": ["Windows PC", "macOS", "Nintendo Switch"],
     "release_date": "2020-09-17",
     "developer": "Supergiant Games",
     "publisher": "Supergiant Games",
@@ -89,7 +92,16 @@
   {
     "title": "Stardew Valley",
     "genre": "Simulation RPG",
-    "platform": ["Windows PC", "macOS", "Linux", "PlayStation 4", "Xbox One", "Nintendo Switch", "Android", "iOS"],
+    "platform": [
+      "Windows PC",
+      "macOS",
+      "Linux",
+      "PlayStation 4",
+      "Xbox One",
+      "Nintendo Switch",
+      "Android",
+      "iOS"
+    ],
     "release_date": "2016-02-24",
     "developer": "ConcernedApe",
     "publisher": "Chucklefish Games",
@@ -100,7 +112,13 @@
   {
     "title": "Cuphead",
     "genre": "Run and gun",
-    "platform": ["Windows PC", "macOS", "Xbox One", "Nintendo Switch", "PlayStation 4"],
+    "platform": [
+      "Windows PC",
+      "macOS",
+      "Xbox One",
+      "Nintendo Switch",
+      "PlayStation 4"
+    ],
     "release_date": "2017-09-29",
     "developer": "Studio MDHR",
     "publisher": "Studio MDHR",
@@ -111,7 +129,14 @@
   {
     "title": "Disco Elysium",
     "genre": "Role-playing game",
-    "platform": ["Windows PC", "macOS", "PlayStation 4", "PlayStation 5", "Xbox One", "Xbox Series X/S"],
+    "platform": [
+      "Windows PC",
+      "macOS",
+      "PlayStation 4",
+      "PlayStation 5",
+      "Xbox One",
+      "Xbox Series X/S"
+    ],
     "release_date": "2019-10-15",
     "developer": "ZA/UM",
     "publisher": "ZA/UM",
@@ -122,7 +147,16 @@
   {
     "title": "Celeste",
     "genre": "Platformer",
-    "platform": ["Windows PC", "macOS", "Linux", "PlayStation 4", "Xbox One", "Nintendo Switch", "Android", "iOS"],
+    "platform": [
+      "Windows PC",
+      "macOS",
+      "Linux",
+      "PlayStation 4",
+      "Xbox One",
+      "Nintendo Switch",
+      "Android",
+      "iOS"
+    ],
     "release_date": "2018-01-25",
     "developer": "Matt Makes Games",
     "publisher": "Matt Makes Games",
@@ -144,7 +178,14 @@
   {
     "title": "The Elder Scrolls V: Skyrim",
     "genre": "Action RPG",
-    "platform": ["Windows PC", "PlayStation 3", "Xbox 360", "PlayStation 4", "Xbox One", "Nintendo Switch"],
+    "platform": [
+      "Windows PC",
+      "PlayStation 3",
+      "Xbox 360",
+      "PlayStation 4",
+      "Xbox One",
+      "Nintendo Switch"
+    ],
     "release_date": "2011-11-11",
     "developer": "Bethesda Game Studios",
     "publisher": "Bethesda Softworks",
@@ -155,7 +196,16 @@
   {
     "title": "Minecraft",
     "genre": "Sandbox",
-    "platform": ["Windows PC", "macOS", "Linux", "PlayStation 4", "Xbox One", "Nintendo Switch", "Android", "iOS"],
+    "platform": [
+      "Windows PC",
+      "macOS",
+      "Linux",
+      "PlayStation 4",
+      "Xbox One",
+      "Nintendo Switch",
+      "Android",
+      "iOS"
+    ],
     "release_date": "2011-11-18",
     "developer": "Mojang Studios",
     "publisher": "Mojang Studios, Microsoft Studios",
@@ -166,7 +216,17 @@
   {
     "title": "Undertale",
     "genre": "Role-playing game",
-    "platform": ["Windows PC", "macOS", "Linux", "PlayStation 4", "PlayStation Vita", "Xbox One", "Nintendo Switch", "Android", "iOS"],
+    "platform": [
+      "Windows PC",
+      "macOS",
+      "Linux",
+      "PlayStation 4",
+      "PlayStation Vita",
+      "Xbox One",
+      "Nintendo Switch",
+      "Android",
+      "iOS"
+    ],
     "release_date": "2015-09-15",
     "developer": "Toby Fox",
     "publisher": "Toby Fox",
@@ -177,7 +237,16 @@
   {
     "title": "Stardew Valley",
     "genre": "Simulation RPG",
-    "platform": ["Windows PC", "macOS", "Linux", "PlayStation 4", "Xbox One", "Nintendo Switch", "Android", "iOS"],
+    "platform": [
+      "Windows PC",
+      "macOS",
+      "Linux",
+      "PlayStation 4",
+      "Xbox One",
+      "Nintendo Switch",
+      "Android",
+      "iOS"
+    ],
     "release_date": "2016-02-24",
     "developer": "ConcernedApe",
     "publisher": "Chucklefish Games",
@@ -199,7 +268,13 @@
   {
     "title": "Elden Ring",
     "genre": "Action RPG",
-    "platform": ["Windows PC", "PlayStation 4", "PlayStation 5", "Xbox One", "Xbox Series X/S"],
+    "platform": [
+      "Windows PC",
+      "PlayStation 4",
+      "PlayStation 5",
+      "Xbox One",
+      "Xbox Series X/S"
+    ],
     "release_date": "2022-02-25",
     "developer": "FromSoftware",
     "publisher": "Bandai Namco Entertainment",
@@ -232,7 +307,13 @@
   {
     "title": "Metal Gear Solid V: The Phantom Pain",
     "genre": "Stealth action-adventure",
-    "platform": ["Windows PC", "PlayStation 3", "PlayStation 4", "Xbox 360", "Xbox One"],
+    "platform": [
+      "Windows PC",
+      "PlayStation 3",
+      "PlayStation 4",
+      "Xbox 360",
+      "Xbox One"
+    ],
     "release_date": "2015-09-01",
     "developer": "Kojima Productions",
     "publisher": "Konami",
@@ -309,7 +390,15 @@
   {
     "title": "Stardew Valley",
     "genre": "Simulation",
-    "platform": ["PC", "macOS", "Linux", "PlayStation 4", "Xbox One", "Nintendo Switch", "Mobile"],
+    "platform": [
+      "PC",
+      "macOS",
+      "Linux",
+      "PlayStation 4",
+      "Xbox One",
+      "Nintendo Switch",
+      "Mobile"
+    ],
     "release_date": "2016-02-26",
     "developer": "ConcernedApe",
     "publisher": "Chucklefish Games",
@@ -331,7 +420,14 @@
   {
     "title": "Firewatch",
     "genre": "Narrative adventure, Exploration",
-    "platform": ["PC", "PlayStation 4", "Xbox One", "Nintendo Switch", "iOS", "Android"],
+    "platform": [
+      "PC",
+      "PlayStation 4",
+      "Xbox One",
+      "Nintendo Switch",
+      "iOS",
+      "Android"
+    ],
     "release_date": "2016-09-08",
     "developer": "Campo Santo",
     "publisher": "Adult Swim Games",
@@ -339,7 +435,7 @@
     "image": "https://upload.wikimedia.org/wikipedia/en/a/a5/Firewatch_cover.jpg",
     "avg_rating": 4.4
   },
-   {
+  {
     "title": "Outer Wilds",
     "genre": "Exploration, Adventure",
     "platform": ["PC", "PlayStation 4", "Xbox One"],
@@ -364,7 +460,14 @@
   {
     "title": "Disco Elysium",
     "genre": "Role-playing game, Open world",
-    "platform": ["PC", "PlayStation 4", "PlayStation 5", "Xbox One", "Xbox Series X/S", "macOS"],
+    "platform": [
+      "PC",
+      "PlayStation 4",
+      "PlayStation 5",
+      "Xbox One",
+      "Xbox Series X/S",
+      "macOS"
+    ],
     "release_date": "2019-10-15",
     "developer": "ZA/UM",
     "publisher": "ZA/UM",
@@ -375,7 +478,14 @@
   {
     "title": "Inside",
     "genre": "Puzzle-platformer, Adventure",
-    "platform": ["PC", "PlayStation 4", "Xbox One", "iOS", "macOS", "Nintendo Switch"],
+    "platform": [
+      "PC",
+      "PlayStation 4",
+      "Xbox One",
+      "iOS",
+      "macOS",
+      "Nintendo Switch"
+    ],
     "release_date": "2016-06-07",
     "developer": "Playdead",
     "publisher": "Playdead",
@@ -383,10 +493,18 @@
     "image": "https://upload.wikimedia.org/wikipedia/en/5/50/INSIDE_Xbox_One_cover_art.png",
     "avg_rating": 4.5
   },
-   {
+  {
     "title": "Stardew Valley",
     "genre": "Simulation, Role-playing",
-    "platform": ["PC", "macOS", "Linux", "PlayStation 4", "Xbox One", "Nintendo Switch", "Mobile"],
+    "platform": [
+      "PC",
+      "macOS",
+      "Linux",
+      "PlayStation 4",
+      "Xbox One",
+      "Nintendo Switch",
+      "Mobile"
+    ],
     "release_date": "2016-02-26",
     "developer": "ConcernedApe",
     "publisher": "Chucklefish Games",
@@ -394,7 +512,7 @@
     "image": "https://upload.wikimedia.org/wikipedia/en/f/fd/Logo_of_Stardew_Valley.png",
     "avg_rating": 4.5
   },
-   {
+  {
     "title": "Portal 2",
     "genre": "Puzzle-platformer",
     "platform": ["PC", "PlayStation 3", "Xbox 360", "macOS", "Linux"],
@@ -416,7 +534,7 @@
     "image": "https://upload.wikimedia.org/wikipedia/en/c/c6/The_Legend_of_Zelda_Breath_of_the_Wild.jpg",
     "avg_rating": 4.9
   },
-   {
+  {
     "title": "Red Dead Redemption 2",
     "genre": "Action-adventure, Open world",
     "platform": ["PlayStation 4", "Xbox One", "PC"],
@@ -430,7 +548,14 @@
   {
     "title": "What Remains of Edith Finch",
     "genre": "Narrative adventure, Exploration",
-    "platform": ["PC", "PlayStation 4", "Xbox One", "macOS", "Nintendo Switch", "Mobile"],
+    "platform": [
+      "PC",
+      "PlayStation 4",
+      "Xbox One",
+      "macOS",
+      "Nintendo Switch",
+      "Mobile"
+    ],
     "release_date": "2017-09-15",
     "developer": "Giant Sparrow",
     "publisher": "Annapurna Interactive",
@@ -441,7 +566,13 @@
   {
     "title": "Metal Gear Solid V: The Phantom Pain",
     "genre": "Action-adventure, Stealth",
-    "platform": ["PlayStation 4", "Xbox One", "PlayStation 3", "Xbox 360", "PC"],
+    "platform": [
+      "PlayStation 4",
+      "Xbox One",
+      "PlayStation 3",
+      "Xbox 360",
+      "PC"
+    ],
     "release_date": "2015-09-01",
     "developer": "Kojima Productions",
     "publisher": "Konami",
@@ -481,5 +612,536 @@
     "description": "2B, a combat android, and 9S, a scanner android, fight machine lifeforms in a post-apocalyptic world while uncovering the truth about their existence.",
     "image": "https://upload.wikimedia.org/wikipedia/en/2/21/Nier_Automata_cover_art.jpg",
     "avg_rating": 4.7
+  },
+  {
+    "title": "Dark Souls III",
+    "genre": "Action RPG",
+    "platform": ["PlayStation 4", "Xbox One", "Microsoft Windows"],
+    "release_date": "2016-04-12",
+    "developer": "FromSoftware",
+    "publisher": "Bandai Namco Entertainment",
+    "description": "Dark Souls III is the third installment in the challenging action RPG series known for its intense combat, intricate level design, and atmospheric world.",
+    "image": "https://upload.wikimedia.org/wikipedia/en/b/bb/Dark_souls_3_cover_art.jpg",
+    "avg_rating": 4.7
+  },
+  {
+    "title": "Mass Effect 2",
+    "genre": "Action RPG, Sci-Fi",
+    "platform": ["PlayStation 3", "Xbox 360", "Microsoft Windows"],
+    "release_date": "2010-01-26",
+    "developer": "BioWare",
+    "publisher": "Electronic Arts",
+    "description": "Mass Effect 2 is a sci-fi RPG that follows Commander Shepard as they assemble a diverse team to save the galaxy. The game is praised for its compelling narrative and character development.",
+    "image": "https://upload.wikimedia.org/wikipedia/en/0/05/MassEffect2_cover.PNG",
+    "avg_rating": 4.9
+  },
+  {
+    "title": "Bioshock Infinite",
+    "genre": "First-person Shooter, Action RPG",
+    "platform": ["PlayStation 3", "Xbox 360", "Microsoft Windows"],
+    "release_date": "2013-03-26",
+    "developer": "Irrational Games",
+    "publisher": "2K Games",
+    "description": "Set in the sky-bound city of Columbia, Bioshock Infinite combines intense FPS gameplay with a thought-provoking narrative, exploring themes of identity and choice.",
+    "image": "https://upload.wikimedia.org/wikipedia/en/a/a3/Official_cover_art_for_Bioshock_Infinite.jpg",
+    "avg_rating": 4.8
+  },
+  {
+    "title": "The Elder Scrolls IV: Oblivion",
+    "genre": "Action RPG",
+    "platform": ["PlayStation 3", "Xbox 360", "Microsoft Windows"],
+    "release_date": "2006-03-20",
+    "developer": "Bethesda Game Studios",
+    "publisher": "Bethesda Softworks",
+    "description": "Oblivion is an expansive open-world RPG, offering a vast fantasy realm to explore, filled with quests, dungeons, and a rich lore.",
+    "image": "https://upload.wikimedia.org/wikipedia/en/4/4b/The_Elder_Scrolls_IV_Oblivion_cover.png",
+    "avg_rating": 4.7
+  },
+  {
+    "title": "Divinity: Original Sin 2",
+    "genre": "Role-playing",
+    "platform": [
+      "PlayStation 4",
+      "Xbox One",
+      "Nintendo Switch",
+      "Microsoft Windows"
+    ],
+    "release_date": "2017-09-14",
+    "developer": "Larian Studios",
+    "publisher": "Larian Studios",
+    "description": "Divinity: Original Sin 2 is a critically acclaimed RPG with deep storytelling, strategic turn-based combat, and a highly interactive world.",
+    "image": "https://upload.wikimedia.org/wikipedia/en/4/48/Divinity_Original_Sin_2_cover_art.jpg",
+    "avg_rating": 4.9
+  },
+  {
+    "title": "The Legend of Zelda: Ocarina of Time",
+    "genre": "Action-adventure",
+    "platform": ["Nintendo 64", "Nintendo 3DS"],
+    "release_date": "1998-11-21",
+    "developer": "Nintendo EAD",
+    "publisher": "Nintendo",
+    "description": "The Legend of Zelda: Ocarina of Time is a classic action-adventure game that follows Link's quest to stop the evil Ganondorf. It is highly acclaimed for its revolutionary 3D gameplay and immersive world.",
+    "image": "https://upload.wikimedia.org/wikipedia/en/5/57/The_Legend_of_Zelda_Ocarina_of_Time.jpg",
+    "avg_rating": 4.9
+  },
+
+  {
+    "title": "Fallout: New Vegas",
+    "genre": "Action RPG",
+    "platform": ["PlayStation 3", "Xbox 360", "Microsoft Windows"],
+    "release_date": "2010-10-19",
+    "developer": "Obsidian Entertainment",
+    "publisher": "Bethesda Softworks",
+    "description": "Fallout: New Vegas is an action RPG set in a post-apocalyptic world. With branching storylines and a vast open-world, players navigate the Mojave Wasteland in search of their character's past.",
+    "image": "https://upload.wikimedia.org/wikipedia/en/3/34/Fallout_New_Vegas.jpg",
+    "avg_rating": 4.7
+  },
+
+  {
+    "title": "Assassin's Creed: Odyssey",
+    "genre": "Action RPG",
+    "platform": ["PlayStation 4", "Xbox One", "Microsoft Windows"],
+    "release_date": "2018-10-05",
+    "developer": "Ubisoft Quebec",
+    "publisher": "Ubisoft",
+    "description": "Assassin's Creed: Odyssey takes players to ancient Greece, offering a vast open-world to explore. With choice-driven narratives and intense combat, it's a standout in the Assassin's Creed series.",
+    "image": "https://upload.wikimedia.org/wikipedia/en/9/99/ACOdysseyCoverArt.png",
+    "avg_rating": 4.8
+  },
+
+  {
+    "title": "Half-Life 2",
+    "genre": "First-person Shooter",
+    "platform": ["Microsoft Windows", "PlayStation 3", "Xbox 360"],
+    "release_date": "2004-11-16",
+    "developer": "Valve",
+    "publisher": "Valve",
+    "description": "Half-Life 2 is a groundbreaking first-person shooter known for its immersive storytelling, advanced physics, and innovative gameplay mechanics. It continues the story of Gordon Freeman as he battles the Combine forces.",
+    "image": "https://upload.wikimedia.org/wikipedia/en/2/25/Half-Life_2_cover.jpg",
+    "avg_rating": 4.9
+  },
+
+  {
+    "title": "The Last of Us Part II",
+    "genre": "Action-adventure",
+    "platform": ["PlayStation 4"],
+    "release_date": "2020-06-19",
+    "developer": "Naughty Dog",
+    "publisher": "Sony Interactive Entertainment",
+    "description": "The Last of Us Part II is an emotionally charged action-adventure game that follows Ellie's journey in a post-apocalyptic world. With a gripping narrative and intense gameplay, it received widespread acclaim.",
+    "image": "https://upload.wikimedia.org/wikipedia/en/4/4f/TLOU_P2_Box_Art_2.png",
+    "avg_rating": 4.9
+  },
+  {
+    "title": "Persona 5",
+    "genre": "Role-playing",
+    "platform": ["PlayStation 3", "PlayStation 4"],
+    "release_date": "2016-09-15",
+    "developer": "Atlus",
+    "publisher": "Atlus",
+    "description": "Persona 5 is a stylish role-playing game where players take on the role of a high school student who moonlights as a Phantom Thief. With a mix of dungeon exploration, social simulation, and turn-based combat, it has gained widespread acclaim.",
+    "image": "https://upload.wikimedia.org/wikipedia/en/b/b0/Persona_5_cover_art.jpg",
+    "avg_rating": 4.9
+  },
+
+  {
+    "title": "The Witcher 2: Assassins of Kings",
+    "genre": "Action RPG",
+    "platform": ["Xbox 360", "Microsoft Windows"],
+    "release_date": "2011-05-17",
+    "developer": "CD Projekt",
+    "publisher": "CD Projekt",
+    "description": "The Witcher 2: Assassins of Kings is the second installment in the Witcher series, offering a dark fantasy world and a mature, branching narrative. Players control Geralt of Rivia as he navigates political intrigue and monster hunting.",
+    "image": "https://upload.wikimedia.org/wikipedia/en/4/40/Witcher_2_cover.jpg",
+    "avg_rating": 4.7
+  },
+
+  {
+    "title": "Uncharted 4: A Thief's End",
+    "genre": "Action-adventure",
+    "platform": ["PlayStation 4"],
+    "release_date": "2016-05-10",
+    "developer": "Naughty Dog",
+    "publisher": "Sony Interactive Entertainment",
+    "description": "Uncharted 4: A Thief's End is an action-adventure game that follows Nathan Drake on his final adventure. Known for its stunning visuals, cinematic storytelling, and exhilarating set-pieces.",
+    "image": "https://upload.wikimedia.org/wikipedia/en/1/1a/Uncharted_4_box_artwork.jpg",
+    "avg_rating": 4.8
+  },
+
+  {
+    "title": "Star Wars Jedi: Fallen Order",
+    "genre": "Action-adventure",
+    "platform": ["PlayStation 4", "Xbox One", "Microsoft Windows"],
+    "release_date": "2019-11-15",
+    "developer": "Respawn Entertainment",
+    "publisher": "Electronic Arts",
+    "description": "Star Wars Jedi: Fallen Order is an action-adventure game set in the Star Wars universe. Players control Cal Kestis, a young Jedi Padawan, as he navigates a galaxy under the grip of the Empire.",
+    "image": "https://upload.wikimedia.org/wikipedia/en/1/13/Cover_art_of_Star_Wars_Jedi_Fallen_Order.jpg",
+    "avg_rating": 4.8
+  },
+
+  {
+    "title": "Minecraft: Java Edition",
+    "genre": "Sandbox, Survival",
+    "platform": ["Microsoft Windows", "macOS", "Linux"],
+    "release_date": "2011-11-18",
+    "developer": "Mojang",
+    "publisher": "Mojang",
+    "description": "Minecraft is a sandbox game that allows players to build and explore virtual worlds made up of blocks. With limitless creativity and survival challenges, it has become a cultural phenomenon.",
+    "image": "https://upload.wikimedia.org/wikipedia/en/5/51/Minecraft_cover.png",
+    "avg_rating": 4.7
+  },
+  {
+    "title": "Splatoon 2",
+    "genre": "Third-person Shooter",
+    "platform": ["Nintendo Switch"],
+    "release_date": "2017-07-21",
+    "developer": "Nintendo EPD",
+    "publisher": "Nintendo",
+    "description": "Splatoon 2 is a colorful third-person shooter where players control squid-like characters, engaging in vibrant and fast-paced multiplayer battles. The game is known for its unique gameplay and family-friendly design.",
+    "image": "https://upload.wikimedia.org/wikipedia/en/4/49/Splatoon_2.jpg",
+    "avg_rating": 4.8
+  },
+
+  {
+    "title": "Yoshi's Crafted World",
+    "genre": "Platformer",
+    "platform": ["Nintendo Switch"],
+    "release_date": "2019-03-29",
+    "developer": "Good-Feel",
+    "publisher": "Nintendo",
+    "description": "Yoshi's Crafted World is a delightful platformer where players guide Yoshi through a world made of everyday objects. The game features charming visuals, creative level design, and cooperative multiplayer.",
+    "image": "https://upload.wikimedia.org/wikipedia/en/3/38/Yoshi%27s_Crafted_World.jpg",
+    "avg_rating": 4.7
+  },
+
+  {
+    "title": "Kirby Star Allies",
+    "genre": "Platformer",
+    "platform": ["Nintendo Switch"],
+    "release_date": "2018-03-16",
+    "developer": "HAL Laboratory",
+    "publisher": "Nintendo",
+    "description": "Kirby Star Allies is a platformer that follows the adorable pink puffball, Kirby, as he befriends enemies to create a team. The game features cooperative multiplayer and a charming art style.",
+    "image": "https://upload.wikimedia.org/wikipedia/en/6/65/Kirby_Star_Allies.jpg",
+    "avg_rating": 4.6
+  },
+
+  {
+    "title": "LittleBigPlanet 3",
+    "genre": "Puzzle-platformer",
+    "platform": ["PlayStation 4"],
+    "release_date": "2014-11-18",
+    "developer": "Sumo Digital",
+    "publisher": "Sony Computer Entertainment",
+    "description": "LittleBigPlanet 3 is a puzzle-platformer that allows players to create, share, and play user-generated levels. It emphasizes creativity, cooperative gameplay, and a charming narrative.",
+    "image": "https://upload.wikimedia.org/wikipedia/en/b/be/LittleBigPlanet_3_boxart.jpg",
+    "avg_rating": 4.7
+  },
+
+  {
+    "title": "Luigi's Mansion 3",
+    "genre": "Action-adventure",
+    "platform": ["Nintendo Switch"],
+    "release_date": "2019-10-31",
+    "developer": "Next Level Games",
+    "publisher": "Nintendo",
+    "description": "Luigi's Mansion 3 is an action-adventure game where Luigi must rescue his friends from the haunted Last Resort hotel. The game combines humor, puzzles, and exploration in a kid-friendly setting.",
+    "image": "https://upload.wikimedia.org/wikipedia/en/3/38/Luigi%27s_Mansion_3.jpg",
+    "avg_rating": 4.8
+  },
+  {
+    "title": "Overwatch",
+    "genre": "First-person Shooter",
+    "platform": ["PlayStation 4", "Xbox One", "Microsoft Windows"],
+    "release_date": "2016-05-24",
+    "developer": "Blizzard Entertainment",
+    "publisher": "Blizzard Entertainment",
+    "description": "Overwatch is a team-based first-person shooter with a diverse cast of heroes, each with unique abilities. Known for its fast-paced gameplay and emphasis on teamwork, it has gained popularity in the competitive gaming scene.",
+    "image": "https://upload.wikimedia.org/wikipedia/en/5/51/Overwatch_cover_art.jpg",
+    "avg_rating": 4.7
+  },
+
+  {
+    "title": "The Legend of Zelda: Majora's Mask",
+    "genre": "Action-adventure",
+    "platform": ["Nintendo 64", "Nintendo 3DS"],
+    "release_date": "2000-04-27",
+    "developer": "Nintendo EAD",
+    "publisher": "Nintendo",
+    "description": "The Legend of Zelda: Majora's Mask is an action-adventure game known for its unique time-based mechanics. Link must save the world of Termina within a three-day cycle, adding an element of urgency to the gameplay.",
+    "image": "https://upload.wikimedia.org/wikipedia/en/6/60/The_Legend_of_Zelda_-_Majora%27s_Mask_Box_Art.jpg",
+    "avg_rating": 4.8
+  },
+
+  {
+    "title": "Rocket League",
+    "genre": "Sports, Racing",
+    "platform": ["Multiple Platforms"],
+    "release_date": "2015-07-07",
+    "developer": "Psyonix",
+    "publisher": "Psyonix",
+    "description": "Rocket League is a unique sports game that combines soccer with rocket-powered cars. Players control customizable vehicles and aim to score goals in a fast-paced and highly entertaining multiplayer environment.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Rocket_League_coverart.jpg",
+    "avg_rating": 4.8
+  },
+
+  {
+    "title": "Civilization VI",
+    "genre": "Turn-based Strategy",
+    "platform": ["Multiple Platforms"],
+    "release_date": "2016-10-21",
+    "developer": "Firaxis Games",
+    "publisher": "2K Games",
+    "description": "Sid Meier's Civilization VI is a turn-based strategy game that challenges players to build and lead their own civilization from ancient times to the modern era. It features complex gameplay and strategic depth.",
+    "image": "https://upload.wikimedia.org/wikipedia/en/3/3b/Civilization_VI_cover_art.jpg",
+    "avg_rating": 4.6
+  },
+  {
+    "title": "Doom Eternal",
+    "genre": "First-person Shooter",
+    "platform": ["PlayStation 4", "Xbox One", "Microsoft Windows"],
+    "release_date": "2020-03-20",
+    "developer": "id Software",
+    "publisher": "Bethesda Softworks",
+    "description": "Doom Eternal is an intense first-person shooter that continues the iconic Doom series. Players battle against demonic forces with powerful weapons and engage in fast-paced, adrenaline-pumping combat.",
+    "image": "https://upload.wikimedia.org/wikipedia/en/9/9d/Cover_Art_of_Doom_Eternal.png",
+    "avg_rating": 4.9
+  },
+
+  {
+    "title": "Horizon Zero Dawn",
+    "genre": "Action RPG",
+    "platform": ["PlayStation 4", "Microsoft Windows"],
+    "release_date": "2017-02-28",
+    "developer": "Guerrilla Games",
+    "publisher": "Sony Interactive Entertainment",
+    "description": "Horizon Zero Dawn is an action RPG set in a lush, post-apocalyptic world where robotic creatures roam. Players control Aloy, a skilled hunter, as she unravels the mysteries of her world.",
+    "image": "https://upload.wikimedia.org/wikipedia/en/9/93/Horizon_Zero_Dawn.jpg",
+    "avg_rating": 4.8
+  },
+
+  {
+    "title": "Cities: Skylines",
+    "genre": "City-building Simulation",
+    "platform": ["Multiple Platforms"],
+    "release_date": "2015-03-10",
+    "developer": "Colossal Order",
+    "publisher": "Paradox Interactive",
+    "description": "Cities: Skylines is a city-building simulation game where players can construct and manage their own city. It offers expansive city planning and customization options, making it a favorite among simulation enthusiasts.",
+    "image": "https://upload.wikimedia.org/wikipedia/en/5/58/Cities_Skylines_cover_art.jpg",
+    "avg_rating": 4.7
+  },
+
+  {
+    "title": "Monster Hunter: Rise",
+    "genre": "Action RPG",
+    "platform": ["Nintendo Switch"],
+    "release_date": "2021-03-26",
+    "developer": "Capcom",
+    "publisher": "Capcom",
+    "description": "Monster Hunter: Rise is an action RPG that lets players embark on epic hunts to defeat formidable monsters. With cooperative multiplayer, dynamic environments, and a variety of weapons, it's a thrilling experience for fans of the series.",
+    "image": "https://upload.wikimedia.org/wikipedia/en/4/41/Monster_hunter_rise_cover.jpg",
+    "avg_rating": 4.8
+  },
+
+  {
+    "title": "Ori and the Will of the Wisps",
+    "genre": "Metroidvania",
+    "platform": ["Xbox One", "Microsoft Windows", "Nintendo Switch"],
+    "release_date": "2020-03-11",
+    "developer": "Moon Studios",
+    "publisher": "Xbox Game Studios",
+    "description": "Ori and the Will of the Wisps is a visually stunning metroidvania game. Players control Ori, a guardian spirit, as they navigate through a beautifully crafted world, solving puzzles and battling enemies.",
+    "image": "https://upload.wikimedia.org/wikipedia/en/9/94/Ori_and_the_Will_of_the_Wisps.jpg",
+    "avg_rating": 4.9
+  },
+
+  {
+    "title": "Fire Emblem: Three Houses",
+    "genre": "Tactical RPG",
+    "platform": ["Nintendo Switch"],
+    "release_date": "2019-07-26",
+    "developer": "Intelligent Systems",
+    "publisher": "Nintendo",
+    "description": "Fire Emblem: Three Houses is a tactical RPG with deep storytelling and strategic battles. Players take on the role of a professor at a military academy, shaping the destinies of their students.",
+    "image": "https://upload.wikimedia.org/wikipedia/en/1/16/Fire_Emblem_Three_Houses.jpg",
+    "avg_rating": 4.9
+  },
+  {
+    "title": "Hollow Knight: Silksong",
+    "genre": "Metroidvania",
+    "platform": ["Multiple Platforms"],
+    "release_date": "2024-03-02",
+    "developer": "Team Cherry",
+    "publisher": "Team Cherry",
+    "description": "Hollow Knight: Silksong is the highly anticipated sequel to Hollow Knight. Players control Hornet, a princess-protector, as she embarks on a journey through a new kingdom filled with challenging enemies and mysteries.",
+    "image": "https://upload.wikimedia.org/wikipedia/en/5/53/Hollow_Knight_Silksong_cover_art.jpg",
+    "avg_rating": 4.7
+  },
+  {
+    "title": "Cyberpunk 2077",
+    "genre": "Action RPG",
+    "platform": ["Multiple Platforms"],
+    "release_date": "2020-12-10",
+    "developer": "CD Projekt",
+    "publisher": "CD Projekt",
+    "description": "Cyberpunk 2077 is a futuristic open-world action RPG set in the dystopian Night City. Players assume the role of V, a mercenary, as they navigate a cyber-enhanced world filled with complex characters and choices.",
+    "image": "https://upload.wikimedia.org/wikipedia/en/9/9f/Cyberpunk_2077_box_art.jpg",
+    "avg_rating": 4.2
+  },
+
+  {
+    "title": "Astral Chain",
+    "genre": "Action",
+    "platform": ["Nintendo Switch"],
+    "release_date": "2019-08-30",
+    "developer": "PlatinumGames",
+    "publisher": "Nintendo",
+    "description": "Astral Chain is an action game set in a vibrant, futuristic city. Players control a special task force officer with a sentient weapon, battling otherworldly creatures and solving cases to maintain peace.",
+    "image": "https://upload.wikimedia.org/wikipedia/en/6/67/Astral_Chain.jpg",
+    "avg_rating": 4.4
+  },
+
+  {
+    "title": "Slay the Spire",
+    "genre": "Deck-building Rogue-like",
+    "platform": ["Multiple Platforms"],
+    "release_date": "2019-01-23",
+    "developer": "MegaCrit",
+    "publisher": "Humble Games",
+    "description": "Slay the Spire is a deck-building rogue-like game where players ascend a spire, encountering various challenges and enemies. The game's dynamic card-based combat and strategic choices make each run unique.",
+    "image": "https://upload.wikimedia.org/wikipedia/en/b/b7/Slay_the_spire_cover.jpg",
+    "avg_rating": 4.7
+  },
+
+  {
+    "title": "Subnautica",
+    "genre": "Survival, Adventure",
+    "platform": ["Multiple Platforms"],
+    "release_date": "2018-01-23",
+    "developer": "Unknown Worlds Entertainment",
+    "publisher": "Unknown Worlds Entertainment",
+    "description": "Subnautica is an underwater survival adventure game. Players explore a vast ocean, gather resources, and construct underwater habitats while uncovering the mysteries of an alien planet.",
+    "image": "https://upload.wikimedia.org/wikipedia/en/6/6d/Subnautica_cover_art.png",
+    "avg_rating": 4.8
+  },
+  {
+    "title": "Control",
+    "genre": "Action-adventure",
+    "platform": ["Multiple Platforms"],
+    "release_date": "2019-08-27",
+    "developer": "Remedy Entertainment",
+    "publisher": "505 Games",
+    "description": "Control is an action-adventure game with a supernatural twist. Players assume the role of Jesse Faden, the new director of the Federal Bureau of Control, as she uncovers mysteries within the mysterious Oldest House.",
+    "image": "https://upload.wikimedia.org/wikipedia/en/e/e5/Control_game_cover_art.jpg",
+    "avg_rating": 4.6
+  },
+
+  {
+    "title": "Divinity: Original Sin 2",
+    "genre": "Role-playing",
+    "platform": ["Multiple Platforms"],
+    "release_date": "2017-09-14",
+    "developer": "Larian Studios",
+    "publisher": "Larian Studios",
+    "description": "Divinity: Original Sin 2 is a critically acclaimed role-playing game with deep storytelling and strategic turn-based combat. Players create their own characters and embark on a journey in a rich fantasy world.",
+    "image": "https://upload.wikimedia.org/wikipedia/en/4/48/Divinity_Original_Sin_2_cover_art.jpg",
+    "avg_rating": 4.9
+  },
+
+  {
+    "title": "The Outer Worlds",
+    "genre": "Action RPG",
+    "platform": ["Multiple Platforms"],
+    "release_date": "2019-10-25",
+    "developer": "Obsidian Entertainment",
+    "publisher": "Private Division",
+    "description": "The Outer Worlds is an action RPG set in an alternate future where mega-corporations control space colonies. Players navigate a branching narrative and make choices that impact the game world.",
+    "image": "https://upload.wikimedia.org/wikipedia/en/e/e7/The_Outer_Worlds_cover_art.png",
+    "avg_rating": 4.7
+  },
+
+  {
+    "title": "No Man's Sky",
+    "genre": "Action-adventure, Survival",
+    "platform": ["Multiple Platforms"],
+    "release_date": "2016-08-09",
+    "developer": "Hello Games",
+    "publisher": "Hello Games",
+    "description": "No Man's Sky is an expansive action-adventure and survival game set in a procedurally generated universe. Players explore planets, trade, and engage in space exploration with the goal of reaching the center of the galaxy.",
+    "image": "https://upload.wikimedia.org/wikipedia/en/6/67/No_Man%27s_Sky.jpg",
+    "avg_rating": 4.3
+  },
+
+  {
+    "title": "NieR Replicant ver.1.22474487139...",
+    "genre": "Action RPG",
+    "platform": ["Multiple Platforms"],
+    "release_date": "2021-04-23",
+    "developer": "Toylogic",
+    "publisher": "Square Enix",
+    "description": "NieR Replicant ver.1.22474487139... is an action RPG that serves as an updated version of the original NieR Replicant. Players embark on an emotional journey exploring a post-apocalyptic world.",
+    "image": "https://static.wikia.nocookie.net/nier/images/2/2b/Cover_art_122.jpg/revision/latest?cb=20200924153913",
+    "avg_rating": 4.8
+  },
+  {
+    "title": "Assassin's Creed Valhalla",
+    "genre": "Action RPG",
+    "platform": ["Multiple Platforms"],
+    "release_date": "2020-11-10",
+    "developer": "Ubisoft Montreal",
+    "publisher": "Ubisoft",
+    "description": "Assassin's Creed Valhalla is an action RPG set in the Viking Age. Players take on the role of Eivor, a Viking raider, as they lead their clan to settle in England and engage in intense battles and political intrigue.",
+    "image": "https://upload.wikimedia.org/wikipedia/en/f/ff/Assassin%27s_Creed_Valhalla_cover.jpg",
+    "avg_rating": 4.7
+  },
+
+  {
+    "title": "Ghost of Tsushima",
+    "genre": "Action-adventure",
+    "platform": ["PlayStation 4", "PlayStation 5"],
+    "release_date": "2020-07-17",
+    "developer": "Sucker Punch Productions",
+    "publisher": "Sony Interactive Entertainment",
+    "description": "Ghost of Tsushima is an action-adventure game set in feudal Japan. Players control Jin Sakai, a samurai, as he adapts unconventional tactics to protect Tsushima Island from the Mongol invasion.",
+    "image": "https://upload.wikimedia.org/wikipedia/en/b/b6/Ghost_of_Tsushima.jpg",
+    "avg_rating": 4.8
+  },
+
+  {
+    "title": "Rainbow Six Siege",
+    "genre": "Tactical Shooter",
+    "platform": ["Multiple Platforms"],
+    "release_date": "2015-12-01",
+    "developer": "Ubisoft Montreal",
+    "publisher": "Ubisoft",
+    "description": "Rainbow Six Siege is a tactical shooter that focuses on team-based strategy and destructible environments. Players engage in intense close-quarters combat as part of elite counter-terrorism units.",
+    "image": "https://upload.wikimedia.org/wikipedia/en/4/47/Tom_Clancy%27s_Rainbow_Six_Siege_cover_art.jpg",
+    "avg_rating": 4.5
+  },
+
+  {
+    "title": "Death Stranding",
+    "genre": "Action",
+    "platform": ["Multiple Platforms"],
+    "release_date": "2019-11-08",
+    "developer": "Kojima Productions",
+    "publisher": "Sony Interactive Entertainment",
+    "description": "Death Stranding is an action game set in a post-apocalyptic world. Players control Sam Bridges, a courier, as he navigates a fractured society and connects isolated communities.",
+    "image": "https://upload.wikimedia.org/wikipedia/en/2/22/Death_Stranding.jpg",
+    "avg_rating": 4.6
+  },
+
+  {
+    "title": "Mortal Kombat 11",
+    "genre": "Fighting",
+    "platform": ["Multiple Platforms"],
+    "release_date": "2019-04-23",
+    "developer": "NetherRealm Studios",
+    "publisher": "Warner Bros. Interactive Entertainment",
+    "description": "Mortal Kombat 11 is a fighting game with a deep roster of characters and brutal finishing moves. Players engage in one-on-one combat, and the game features a compelling story mode.",
+    "image": "https://upload.wikimedia.org/wikipedia/en/7/7e/Mortal_Kombat_11_cover_art.png",
+    "avg_rating": 4.8
   }
 ]

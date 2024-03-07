@@ -10,12 +10,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Games</title>
+
 </head>
 <body>
 <div class="header">
         <h1>GAMEZONE</h1>
     </div>
+
     <div class="container">
+    <div class="search-container">
+        <input type="text" id="searchInput" onkeyup="searchGames()" placeholder="Search for games...">
+    </div><br>
         <div class="game-container">
             <!-- Game cards go here -->
             {% for game in games %}
@@ -29,6 +34,27 @@
             {% endfor %}
         </div>
     </div>
+
+<script>
+    // Function to filter games based on user input
+    function searchGames() {
+        // Get input value and convert to lowercase for case-insensitive search
+        var input, filter, cards, title, i;
+        input = document.getElementById("searchInput");
+        filter = input.value.toLowerCase();
+        cards = document.getElementsByClassName("game-card");
+
+        // Loop through all game cards, hide those that don't match the search query
+        for (i = 0; i < cards.length; i++) {
+            title = cards[i].getElementsByClassName("game-info")[0].getElementsByTagName("h2")[0];
+            if (title.innerHTML.toLowerCase().indexOf(filter) > -1) {
+                cards[i].style.display = "";
+            } else {
+                cards[i].style.display = "none";
+            }
+        }
+    }
+</script>
 </body>
 </html>
 

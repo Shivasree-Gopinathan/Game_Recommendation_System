@@ -12,3 +12,11 @@ def genre(request):
     }
     return render(request, 'homepage/genre.html', context)
 
+def game_search(request):
+    query = request.GET.get('q')
+    if query:
+        games = Game.objects.filter(title__icontains=query)
+    else:
+        games = Game.objects.all()
+    return render(request, 'game_search.html', {'games': games})
+

@@ -16,6 +16,7 @@ class Game(models.Model):
     description = models.TextField()
     image = models.ImageField(upload_to='images/', blank=False)
     avg_rating = models.FloatField()
+    price = models.DecimalField(max_digits=10, decimal_places=2)
 
     def __str__(self):
         return f'{self.title}'

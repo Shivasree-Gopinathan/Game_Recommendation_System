@@ -13,6 +13,7 @@
     <link rel="stylesheet" type="text/css" href="{% static 'homepage/style.css' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
+
 </head>
 <body>
 <div class="container">
@@ -35,28 +36,11 @@
                 <p>Welcome to <span>Game Zone</span>, your go-to hub for gaming excitement!<br>
                     Discover recommended games, choose your favorites, and dive into endless entertainment. Join us today and unleash your gaming passion!<br>
                   <br>  Explore our vast collection of recommended games carefully curated by our expert team.From action-packed adventures to mind-bending puzzles, there's something for everyone.</p>
-{#                <button id="btn2">Explore Games!<a href="{% url 'homepage:showgames' %}">View Vehicles</a> </button>#}
+                <button id="btn2">Explore Games! </button>
             </div>
 <div class="girl"></div>
         </div>
     </div>
-<!-- Carousel Section -->
-
-{#<div class="container">#}
-{#    <div class="game-container">#}
-{#        {% for game in games %}#}
-{#        <div class="game-card">#}
-{#            <img src="{{ game.image.url }}" alt="{{ game.title }}">#}
-{#            <div class="game-info">#}
-{#                <h2>{{ game.title }}</h2>#}
-{#                <p>{{ game.genre }}</p>#}
-{#            </div>#}
-{#        </div>#}
-{#        {% endfor %}#}
-{#    </div>#}
-{#</div>#}
-{#</div>#}
-
 
 
 <!-- Initialize Owl Carousel -->
@@ -86,7 +70,8 @@
             }
         });
     });
-
+</script>
+<script>
 <!-- Script for filtering games based on user input -->
     function toggleSearch() {
         var searchInput = document.getElementById("searchInput");

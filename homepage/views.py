@@ -1,9 +1,11 @@
 from django.shortcuts import render
 from game.models import Game
+from homepage.models import Genre
 
 def home(request):
     games = Game.objects.all()
-    return render(request, 'homepage/homepage.html', {'games': games})
+    genre = Genre.objects.all()
+    return render(request, 'homepage/homepage.html', {'games': games, 'genre': genre})
     # action_games = Game.objects.filter(genre__icontains='Action')
     # adventure_games = Game.objects.filter(genre__icontains='Adventure')
     # simulation_games = Game.objects.filter(genre__icontains='Simulation')

@@ -35,7 +35,7 @@ body{
 .container{
     width: 100%;
     height: 100vh;
-    /*background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(background.jpg);*/
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(background.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -43,7 +43,7 @@ body{
 header{
     width: 100%;
     height: 10vh;
-    /*background:rgba(0,0,0,0.5);*/
+    background:rgba(0,0,0,0.5);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -144,4 +144,131 @@ ul.navbar li a:hover:not(.active){
 }
 .content-desc span{
     color:rgb(185, 14, 204) ;
+}
+.logo-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+}
+.logo-section .fas{
+    font-size: 6rem;
+    color: #FEC53A;
+}
+.logo-section h1{
+    width: 250px;
+    font-size: 2rem;
+    color: #FEC53A;
+    margin-left: 10px;
+}
+/* Section one starts here */
+.section-1-img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+}
+
+.section-1-img .game-card {
+    width: 280px;
+    height: 300px; /* Set the height for each game card */
+    overflow: hidden; /* Hide overflow content */
+    position: relative; /* Set position to relative for absolute positioning */
+}
+
+.section-1-img .game-card img {
+    width: 100%; /* Ensure the image fills the container */
+    height: 100%; /* Ensure the image fills the container */
+    transition: transform 0.3s ease; /* Add transition for hover effect */
+}
+
+.section-1-img .game-card:hover img {
+    transform: scale(1.1); /* Scale up the image on hover */
+}
+
+.section-1-img .game-card .game-info {
+    position: absolute; /* Position game info absolutely */
+    bottom: 0; /* Align game info to the bottom */
+    left: 0; /* Align game info to the left */
+    width: 100%; /* Full width */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 10px; /* Add padding */
+    box-sizing: border-box; /* Include padding in width/height */
+    transition: opacity 0.3s ease; /* Add transition for hover effect */
+    opacity: 0; /* Initially hidden */
+    color: white;
+    margin: 5px 0;
+    font-size: 12px;
+    text-align: center; /* Center the title */
+}
+
+.section-1-img .game-card:hover .game-info {
+    opacity: 1; /* Show game info on hover */
+}
+
+
+.section-1{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.767),rgba(0, 0, 0, 0.712)), url(streetfighter.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+.section-1-wrapper{
+    width: 70%;
+    margin: auto;
+}
+.section-1 h1{
+    width: 500px;
+    color: #FEC53A;
+    font-size: 1.5rem;
+    position: relative;
+    font-weight: 400;
+}
+.img:hover{
+    transform: translateY(-10px);
+}
+
+.section-1-img .genre-card {
+    width: 280px;
+    height: 300px; /* Set the height for each game card */
+    overflow: hidden; /* Hide overflow content */
+    position: relative; /* Set position to relative for absolute positioning */
+}
+
+.section-1-img .genre-card img {
+    width: 100%; /* Ensure the image fills the container */
+    height: 100%; /* Ensure the image fills the container */
+    transition: transform 0.3s ease; /* Add transition for hover effect */
+}
+
+.section-1-img .genre-card:hover img {
+    transform: scale(1.1); /* Scale up the image on hover */
+}
+
+.section-1-img .genre-card .genre-info {
+    position: absolute; /* Position game info absolutely */
+    bottom: 0; /* Align game info to the bottom */
+    left: 0; /* Align game info to the left */
+    width: 100%; /* Full width */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 10px; /* Add padding */
+    box-sizing: border-box; /* Include padding in width/height */
+    transition: opacity 0.3s ease; /* Add transition for hover effect */
+    opacity: 0; /* Initially hidden */
+    color: white;
+    margin: 5px 0;
+    font-size: 12px;
+    text-align: center; /* Center the title */
+}
+
+.section-1-img .genre-card:hover .genre-info {
+    opacity: 1; /* Show game info on hover */
+}
+
+.section-1-genre{
+    width: 70%;
+    margin: auto;
 }

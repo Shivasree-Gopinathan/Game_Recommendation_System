@@ -8,7 +8,7 @@ def signup(request):
         if form.is_valid():
             user = form.save()  # Save the user to the database
             login(request, user)  # Log in the user after successful signup
-            return redirect('signup_success')  # Redirect to signup success page
+            return redirect('login')  # Redirect to signup success page
     else:
         form = SignUpForm()
     return render(request, 'user/signup.html', {'form': form})
@@ -24,7 +24,7 @@ def login_view(request):
             user = authenticate(request, username=username, password=password)
             if user is not None:
                 login(request, user)
-                return redirect('login_success')
+                return redirect('home')
     else:
         form = LoginForm()
     return render(request, 'user/login.html', {'form': form})

@@ -1,0 +1,211 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extra_head %}
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games</title>
+{#    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">#}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'homepage/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+{% endblock %}
+
+
+{% block content %}
+<div class="container">
+ <header>
+            <div class="logo">
+                <i class="fas fa-gamepad"></i>
+                <p>Game Zone</p>
+            </div>
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Games</a></li>
+                <li><a href="#">Review</a></li>
+{#                <li class="search-container"> <i class="fas fa-search" id="searchIcon" onclick="toggleSearch()"></i>#}
+{#                    <input type="text" id="searchInput" class="hidden" onkeyup="searchGames()" placeholder="Search for games..."></li>#}
+            </ul>
+        </header>
+            <div class="content-wrapper">
+            <div class="content-desc">
+                <h1>THE GAME ZONE</h1>
+                <p>Welcome to <span>Game Zone</span>, your go-to hub for gaming excitement!<br>
+                    Discover recommended games, choose your favorites, and dive into endless entertainment. Join us today and unleash your gaming passion!<br>
+                  <br>  Explore our vast collection of recommended games carefully curated by our expert team.From action-packed adventures to mind-bending puzzles, there's something for everyone.</p>
+                <button id="btn">Explore  Games! </button>
+            </div>
+<div class="girl"></div>
+        </div>
+        <div class="logo-section">
+        <i class="fas fa-gamepad"></i>
+        <h1>The Game Zone</h1>
+    </div>
+    <section class="section-1">
+    <div class="section-1-wrapper">
+        <h1>ALL GAMES</h1>
+        <br>
+        <div class="owl-carousel section-1-img">
+            {% for game in games %}
+            <div class="game-card">
+                <img src="{{ game.image.url }}" alt="{{ game.title }}">
+                <div class="game-info">
+                    <h2>{{ game.title }}</h2>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+ <div class="section-1-genre">
+        <h1>CATERGORIES</h1>
+        <br>
+        <div class="owl-carousel section-1-imggenre">
+            {% for genre in genre %}
+            <div class="genre-card">
+                <img src="{{ genre.image.url }}" alt="{{ genre.name }}">
+                <div class="genre-info">
+                    <h2>{{ genre.name }}</h2>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+{#    <!-- Navigation arrows -->#}
+{#    <button class="prev"><i class="fa fa-chevron-left"></i></button>#}
+{#    <button class="next"><i class="fa fa-chevron-right"></i></button>#}
+</div>
+{#        <div class="game-categories">#}
+{#            <h1>GAME CATEGORIES</h1>#}
+{#            <div class="owl-carousel game-wrapper">#}
+{#                <a href="#"><div class="gw gw-1"></div></a>#}
+{#                <a href="#"><div class="gw gw-2"></div></a>#}
+{#                <a href="#"><div class="gw gw-3"></div></a>#}
+{#                <a href="#"><div class="gw gw-4"></div></a>#}
+{#                <a href="#"><div class="gw gw-5"></div></a>#}
+{#                <a href="#"><div class="gw gw-6"></div></a>#}
+{#                <a href="#"><div class="gw gw-7"></div></a>#}
+{#            </div>#}
+
+{#        </div>#}
+    </section>
+<footer>
+        <div class="footer-body">
+            <div class="logo footer-logo">
+                <i class="fas fa-gamepad"></i>
+                <h1>The Game Zone</h1>
+            </div>
+            <ul>
+                <h3>Short Links</h3>
+                <li><a href="#">Arcade</a></li>
+                <li><a href="#">War Zone</a></li>
+                <li><a href="#">Fifa Game</a></li>
+                <li><a href="#">Pes 2020</a></li>
+                <li><a href="#">Xbox Game</a></li>
+            </ul>
+
+            <ul>
+                <h3>Action Games</h3>
+                <li><a href="#">Anpar</a></li>
+                <li><a href="#">BattleField</a></li>
+                <li><a href="#">The Ghost</a></li>
+                <li><a href="#">Fortnite</a></li>
+                <li><a href="#">Cold War</a></li>
+            </ul>
+            <ul>
+                <h3>Get In Touch</h3>
+                <li><a href="#"><i class="fab fa-facebook"></i>Facebook</a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i>Instagram</a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i>Twitter</a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i>Linkedin</a></li>
+            </ul>
+        </div>
+    </footer>
+    <div class="footer-bottom">
+        <p>Copyright &copy; All Right Reserved <span> GameZone </span> 2024</p>
+    </div>
+</div>
+
+<!-- Include jQuery (required by Owl Carousel) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Include Owl Carousel JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<!-- Initialize Owl Carousel -->
+<script>
+
+    $(document).ready(function(){
+        $(".owl-carousel").owlCarousel({
+            items: 5, // Number of items to display in the carousel
+            loop: true, // Enable loop
+            autoplay: true, // Auto-play enabled
+            autoplayTimeout: 2000, // Auto-play interval (3 seconds)
+            autoplayHoverPause: true, // Pause on hover
+            margin: 10, // Add margin between items
+            responsiveClass:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                576:{
+                    items:2
+                },
+                768:{
+                    items:3
+                },
+                992:{
+                    items:4
+                }
+            }
+        });
+    });
+</script>
+
+{#        <div class="game-categories">#}
+{#            <h1>GAME CATEGORIES</h1>#}
+{#            <div class="game-wrapper">#}
+{#                <a href="#"><div class="gw gw-1"></div></a>#}
+{#                <a href="#"><div class="gw gw-2"></div></a>#}
+{#                <a href="#"><div class="gw gw-3"></div></a>#}
+{#                <a href="#"><div class="gw gw-4"></div></a>#}
+{#                <a href="#"><div class="gw gw-5"></div></a>#}
+{#            </div>#}
+{##}
+{#            <div class="game-wrapper left">#}
+{#                <a href="#"><div class="gw gw-6"></div></a>#}
+{#                <a href="#"><div class="gw gw-7"></div></a>#}
+{#                <a href="#"><div class="gw gw-8"></div></a>#}
+{#                <a href="#"><div class="gw gw-9"></div></a>#}
+{#                <a href="#"><div class="gw gw-10"></div></a>#}
+{#            </div>#}
+{#        </div>#}
+
+
+
+<!-- Initialize Owl Carousel -->
+
+<script>
+<!-- Script for filtering games based on user input -->
+    function toggleSearch() {
+        var searchInput = document.getElementById("searchInput");
+        searchInput.classList.toggle("hidden");
+        if (!searchInput.classList.contains("hidden")) {
+            searchInput.focus();
+        }
+    }
+
+    function searchGames() {
+        var input, filter, cards, title, i;
+        input = document.getElementById("searchInput");
+        filter = input.value.toLowerCase();
+        cards = document.getElementsByClassName("game-card");
+        for (i = 0; i < cards.length; i++) {
+            title = cards[i].getElementsByClassName("game-info")[0].getElementsByTagName("h2")[0];
+            if (title.innerHTML.toLowerCase().indexOf(filter) > -1) {
+                cards[i].style.display = "";
+            } else {
+                cards[i].style.display = "none";
+            }
+        }
+    }
+</script>
+{% endblock  %}

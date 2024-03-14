@@ -6,6 +6,21 @@
   <component name="ChangeListManager">
     <list default="true" id="ca95ec2f-f148-430c-bbdc-9b2267fe3d77" name="Changes" comment="Created requirements.txt file">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/genre_images/RPG.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/genre_images/RPG.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/genre_images/action.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/genre_images/action.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/genre_images/adventure.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/genre_images/adventure.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/genre_images/cargames.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/genre_images/cargames.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/genre_images/multipalyer.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/genre_images/multipalyer.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homepage/static/homepage/genre_images/RPG.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/homepage/static/homepage/genre_images/action.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/homepage/static/homepage/genre_images/adventure.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/homepage/static/homepage/genre_images/cargames.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/homepage/static/homepage/genre_images/multipalyer.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/homepage/static/homepage/genre_images/shooter.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/homepage/static/homepage/genre_images/sport.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/homepage/static/homepage/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/homepage/static/homepage/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homepage/templates/homepage/homepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/homepage/templates/homepage/homepage.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,7 +177,7 @@
       <workItem from="1710210726694" duration="98000" />
       <workItem from="1710211027725" duration="315000" />
       <workItem from="1710212539036" duration="11243000" />
-      <workItem from="1710440672076" duration="912000" />
+      <workItem from="1710440672076" duration="10606000" />
     </task>
     <servers />
   </component>

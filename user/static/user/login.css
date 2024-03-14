@@ -1,0 +1,141 @@
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.background-container {
+    /*#background-image: url('https://static1.thegamerimages.com/wordpress/wp-content/uploads/2021/07/Steam-Library.jpg?q=50&fit=contain&w=1140&h=570&dpr=1.5');#}*/
+    background : url("images/signup2.png");
+    background-size: cover;
+    background-position: center;
+    /*filter: blur(2px);*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+}
+
+header {
+    color: #cc04cf;
+    padding: 0px 0;
+    width: 100%;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 24px; /* Font size for the title */
+    font-weight: bold;
+    top: 30px;
+    left: 20px;
+    z-index:1000;
+}
+
+.title {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #cc04cf;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.container-login {
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, 0.95);
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    max-width: 400px;
+    padding: 45px;
+}
+
+
+h1 {
+    font-weight: bold;
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+}
+
+label {
+    color: #fff;
+    margin-bottom: 0px;
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+form {
+    margin-top: 20px;
+}
+
+/*input[type="text"],*/
+/*input[type="password"] {*/
+/*    width: 100%;*/
+/*    padding: 14px;*/
+/*    margin-bottom: 20px;*/
+/*    border: none;*/
+/*    border-radius: 4px;*/
+/*    background-color: rgba(255, 255, 255, 0.1);*/
+
+/*    box-sizing: border-box;*/
+/*}*/
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    font-size: 18px;
+    padding: 10px;
+    margin-bottom: 4px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+button[type="submit"] {
+    background-color:#cc04cf ;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+button[type="submit"]:hover {
+    background-color:#cc04cf;
+}
+
+.error-message {
+    color: #ff0000;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.signup-link {
+    padding-top: 10px;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 10px;
+}

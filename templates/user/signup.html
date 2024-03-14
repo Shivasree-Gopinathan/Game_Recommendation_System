@@ -1,119 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
 
-<!DOCTYPE html>
-
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% block extra_head %}
     <title>Sign Up</title>
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-{#    <link rel="stylesheet" type="text/css" href="{%static 'user/style.css' %}">#}
-    <style>
-        body {
-            background-color: #000;
-            color: #fff;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            position: relative;
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-+0n0xVW2eSR5Zgb2q9WrMuuMSwUx6j7U3DBQk5rVjNExlSMXQz/i5XyJ2c5IQF5k" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href={% static 'user/signup.css' %}>
+{% endblock %}
 
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
 
-        .background-container {
-            /*#background-image: url('https://static1.thegamerimages.com/wordpress/wp-content/uploads/2021/07/Steam-Library.jpg?q=50&fit=contain&w=1140&h=570&dpr=1.5');#}*/
-            background : url("../../user/static/user/images/signup2.png");
-            background-size: cover;
-            background-position: center;
-            /*{#transform: skewY(-9deg); !* Skew the background image slanting *!#}*/
-            /*{#filter: blur(2px); !* Apply a blur effect to the background image *!#}*/
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -10; /* Ensure the background stays behind other content */
-        }
+{% block content %}
+    <div class="background-container"></div>
 
-        .title {
-            position: absolute; /* Position the title absolutely */
-            top: 20px; /* Adjust top position as needed */
-            left: 20px; /* Adjust left position as needed */
-            color: #cc04cf; /* Color for the title */
-            font-size: 24px; /* Font size for the title */
-            font-weight: bold; /* Bold font for the title */
-            text-transform: uppercase; /* Uppercase text for the title */
-        }
-
-        .container-signup {
-
-            font-size: 16px;
-            background-color: rgba(0, 0, 0, 0.95);
-            border-radius: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            max-width: 350px;
-            padding: 40px;
-        }
-
-        h1 {
-            font-weight: bold;
-            font-size: 28px;
-            color: #fff;
-            text-align: center;
-        }
-
-        label {
-            color: #fff;
-            margin-bottom: 0px;
-        }
-
-        input[type="text"],
-        input[type="email"],
-        input[type="password"] {
-            width: 100%;
-            font-size: 14px;
-            padding: 10px;
-            margin-bottom: 0px;
-            border: none;
-            border-radius: 5px;
-            background-color: rgba(255, 255, 255, 0.1);
-            color: #fff;
-        }
-
-        button[type="submit"] {
-            background-color:#cc04cf ;
-            color: #fff;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-            width: 100%;
-        }
-
-        button[type="submit"]:hover {
-            background-color:#cc04cf;
-        }
-
-        .footer {
-            background-color: rgba(0, 0, 0, 0.5);
-            color: #fff;
-            text-align: center;
-            padding: 15px 0;
-            position: auto;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
-</head>
-<body>
-    <div class="background-container"></div> <!-- Background container -->
-
-    <div class="title">GameZone</div> <!-- Title -->
+    <div class="title">GameZone</div>
 
     <div class="container-signup">
         <h1>Sign Up</h1>
@@ -125,16 +24,12 @@
             {{ form.email }}
             <label for="id_password1">Password:</label>
             {{ form.password1 }}
-            <label for="id_password2">Password confirmation:</label>
+            <label for="id_password2">Password again:</label>
             {{ form.password2 }}
             <button type="submit">Sign Up</button>
         </form>
-        <p style="text-align: center; margin-top: 10px;">Already have an account? <a href="{% url 'login' %}">Login</a></p>
+        <p style="" class="already-account">Already have an account? <a href="{% url 'login' %}">Login</a></p>
     </div>
+{% endblock %}
 
 
-
-    <!-- Bootstrap JS (optional) -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-+0n0xVW2eSR5Zgb2q9WrMuuMSwUx6j7U3DBQk5rVjNExlSMXQz/i5XyJ2c5IQF5k" crossorigin="anonymous"></script>
-</body>
-</html>

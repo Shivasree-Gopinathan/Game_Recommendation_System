@@ -1,1 +1,74 @@
-{% extends 'homepage/homepage.html' %}
+
+{#{% block content %}#}
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games</title>
+{#    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">#}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'homepage/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+<header>
+            <div class="logo">
+                <i class="fas fa-gamepad"></i>
+                <p>Game Zone</p>
+            </div>
+            <ul class="navbar">
+                <li><a href="{% url 'home' %}" class="active">Home</a></li>
+                <li><a href="#">Games</a></li>
+                <li><a href="#">Review</a></li>
+{#                <li class="search-container"> <i class="fas fa-search" id="searchIcon" onclick="toggleSearch()"></i>#}
+{#                    <input type="text" id="searchInput" class="hidden" onkeyup="searchGames()" placeholder="Search for games..."></li>#}
+            </ul>
+</header>
+<h1>ALL GAMES</h1>
+<br>
+{#<form method="get" action="{% url 'showgames' %}">#}
+{#    <input type="text" name="q" placeholder="Search by title...">#}
+{#    <select name="genre">#}
+{#        <option value="">All Genres</option>#}
+{#        {% for individual_genre in unique_genres %}#}
+{#            <option value="{{ individual_genre }}">{{ individual_genre }}</option>#}
+{#        {% endfor %}#}
+{#    </select>#}
+{#    <!-- Add dropdown for platforms if needed -->#}
+{#    <button type="submit">Search</button>#}
+{#</form>#}
+<form method="get" action="{% url 'showgames' %}" class="search-form">
+    <div class="search-container">
+        <input type="text" name="q" id="search-input" placeholder="Search by title...">
+{#        <button type="submit" class="search-btn"><i class="fas fa-search"></i></button>#}
+    </div>
+    <div class="filter-container">
+        <select name="genre" id="genre-select">
+            <option value="">All Genres</option>
+            {% for individual_genre in unique_genres %}
+                <option value="{{ individual_genre }}">{{ individual_genre }}</option>
+            {% endfor %}
+        </select>
+        <!-- Add dropdown for platforms if needed -->
+        <button type="submit" class="filter-btn">Apply Filters</button>
+    </div>
+</form>
+
+<br>
+<div class="owl-carousel section-1-img">
+    {% for game in games %}
+        <div class="game-card">
+            <img src="{{ game.image.url }}" alt="{{ game.title }}">
+            <div class="game-info">
+                <h2>{{ game.title }}</h2>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+
+</body>
+</html>
+{#{% endblock %}#}

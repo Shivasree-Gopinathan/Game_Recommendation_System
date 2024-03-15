@@ -24,5 +24,6 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path('', views.home, name='home'),
     path('genre/', views.genre, name='genre'),
+    path('showgames/', views.showgames, name='showgames'),
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

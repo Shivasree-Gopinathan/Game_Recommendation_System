@@ -18,6 +18,7 @@ from django.contrib import staticfiles
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+print(BASE_DIR)
 
 # Define the base directory of your project
 DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -48,7 +49,8 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "user",
-    "homepage.apps.HomepageConfig"
+    "homepage.apps.HomepageConfig",
+    "game.apps.GameConfig"
 ]
 
 MIDDLEWARE = [

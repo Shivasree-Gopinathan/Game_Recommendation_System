@@ -5,56 +5,176 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ca95ec2f-f148-430c-bbdc-9b2267fe3d77" name="Changes" comment="initial login and signup completed">
-      <change afterPath="$PROJECT_DIR$/genre_images/RPG.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/genre_images/action.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/genre_images/adventure.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/genre_images/cargames.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/genre_images/multipalyer.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/genre_images/shooter.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/genre_images/sport.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homepage/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homepage/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homepage/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homepage/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homepage/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homepage/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homepage/static/homepage/Geralt.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homepage/static/homepage/all.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homepage/static/homepage/assassins.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homepage/static/homepage/background.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homepage/static/homepage/girl1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homepage/static/homepage/homeback.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homepage/static/homepage/img5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homepage/static/homepage/img6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homepage/static/homepage/streetfighter.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homepage/static/homepage/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homepage/static/webfonts/fa-brands-400.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homepage/static/webfonts/fa-brands-400.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homepage/static/webfonts/fa-brands-400.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homepage/static/webfonts/fa-brands-400.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homepage/static/webfonts/fa-brands-400.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homepage/static/webfonts/fa-regular-400.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homepage/static/webfonts/fa-regular-400.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homepage/static/webfonts/fa-regular-400.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homepage/static/webfonts/fa-regular-400.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homepage/static/webfonts/fa-regular-400.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homepage/static/webfonts/fa-solid-900.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homepage/static/webfonts/fa-solid-900.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homepage/static/webfonts/fa-solid-900.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homepage/static/webfonts/fa-solid-900.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homepage/static/webfonts/fa-solid-900.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homepage/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homepage/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homepage/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/homepage/homepage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Game_Recommendation_System.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Game_Recommendation_System.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset_generator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/A_Plague_Tale_Innocence_image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/A_Plague_Tale_Innocence_image_TEbVKMy.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Assassins_Creed_Odyssey_image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Assassins_Creed_Odyssey_image_LF1Hzpv.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Assassins_Creed_Valhalla_image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Assassins_Creed_Valhalla_image_L0tJk1i.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Astral_Chain_image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Astral_Chain_image_nqbsJQ2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Bioshock_Infinite_image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Bioshock_Infinite_image_Vdg7KxB.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Celeste_image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Celeste_image_UUgYy8p.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Cities_Skylines_image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Cities_Skylines_image_MaK5elw.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Civilization_VI_image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Civilization_VI_image_PytCkG6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Control_image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Control_image_25MrnfW.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Cuphead_image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Cuphead_image_TUkELlv.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Cyberpunk_2077_image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Cyberpunk_2077_image_dwQEAoH.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Dark_Souls_III_image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Dark_Souls_III_image_kS76UXb.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Death_Stranding_image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Death_Stranding_image_D2MK3Mz.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Disco_Elysium_image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Disco_Elysium_image_Ni6ioIo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Divinity_Original_Sin_2_image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Divinity_Original_Sin_2_image_FD9EKIN.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Doom_Eternal_image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Doom_Eternal_image_xirC1uE.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Elden_Ring_image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Elden_Ring_image_RpknIOa.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Fallout_New_Vegas_image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Fallout_New_Vegas_image_G8KeLEF.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Fire_Emblem_Three_Houses_image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Fire_Emblem_Three_Houses_image_tbMeCIX.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Firewatch_image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Firewatch_image_SZYqDWK.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Ghost_of_Tsushima_image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Ghost_of_Tsushima_image_EzHe4R3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Grand_Theft_Auto_V_image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Grand_Theft_Auto_V_image_Evp46qK.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Gris_image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Gris_image_vHcq7Sz.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Hades_image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Hades_image_pNK0eG8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Half-Life_2_image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Half-Life_2_image_rXLy9Sl.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Hollow_Knight_Silksong_image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Hollow_Knight_Silksong_image_Rh38F4M.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Hollow_Knight_image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Hollow_Knight_image_hisQAvz.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Horizon_Zero_Dawn_image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Horizon_Zero_Dawn_image_u1Saxxa.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Inside_image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Inside_image_BYUblgq.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Kirby_Star_Allies_image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Kirby_Star_Allies_image_CsQ6Gvt.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/LittleBigPlanet_3_image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/LittleBigPlanet_3_image_4SEBCKv.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Luigis_Mansion_3_image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Luigis_Mansion_3_image_HxLaVA3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Mass_Effect_2_image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Mass_Effect_2_image_xro2cxB.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Metal_Gear_Solid_V_The_Phantom_Pain_image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Metal_Gear_Solid_V_The_Phantom_Pain_image_v956uJa.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Minecraft_Java_Edition_image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Minecraft_Java_Edition_image_aSrr6Ky.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Minecraft_image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Minecraft_image_8LbJaub.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Monster_Hunter_Rise_image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Monster_Hunter_Rise_image_Qmztter.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Monster_Hunter_World_image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Monster_Hunter_World_image_Licv881.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Mortal_Kombat_11_image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Mortal_Kombat_11_image_bf3df4h.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/NieR_Automata_image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/NieR_Automata_image_pplb6NZ.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/NieR_Replicant_ver.1.22474487139..._image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/NieR_Replicant_ver.1.22474487139..._image_UpN1cfU.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/No_Mans_Sky_image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/No_Mans_Sky_image_Ha9HV2E.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Ori_and_the_Will_of_the_Wisps_image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Ori_and_the_Will_of_the_Wisps_image_IuspNHM.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Outer_Wilds_image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Outer_Wilds_image_lg8NqzX.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Overwatch_image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Overwatch_image_z6nn77z.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Persona_5_image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Persona_5_image_PlShirU.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Portal_2_image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Portal_2_image_blWaBpN.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Rainbow_Six_Siege_image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Rainbow_Six_Siege_image_z62Pfjy.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Red_Dead_Redemption_2_Online_image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Red_Dead_Redemption_2_Online_image_fvPo7Ca.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Red_Dead_Redemption_2_image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Red_Dead_Redemption_2_image_pCiil1U.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Rocket_League_image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Rocket_League_image_SfohOYs.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Sekiro_Shadows_Die_Twice_image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Sekiro_Shadows_Die_Twice_image_Edi7vMT.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Slay_the_Spire_image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Slay_the_Spire_image_zfp6Okw.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Splatoon_2_image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Splatoon_2_image_rcya8ZP.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Star_Wars_Jedi_Fallen_Order_image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Star_Wars_Jedi_Fallen_Order_image_XHPjJ8A.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Stardew_Valley_image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Stardew_Valley_image_1IovlCm.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Stray_image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Stray_image_37fJ66p.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Subnautica_image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Subnautica_image_UX4bs0N.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Super_Mario_Odyssey_image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Super_Mario_Odyssey_image_3Q3UM2l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Super_Metroid_image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Super_Metroid_image_n9UNCjA.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/The_Elder_Scrolls_IV_Oblivion_image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/The_Elder_Scrolls_IV_Oblivion_image_5OBclXo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/The_Elder_Scrolls_V_Skyrim_image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/The_Elder_Scrolls_V_Skyrim_image_3NV4Yaj.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/The_Last_Guardian_image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/The_Last_Guardian_image_rMVs6nq.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/The_Last_of_Us_Part_II_image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/The_Last_of_Us_Part_II_image_2j1hwF7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/The_Legend_of_Zelda_Breath_of_the_Wild_image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/The_Legend_of_Zelda_Breath_of_the_Wild_image_4oTRuqS.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/The_Legend_of_Zelda_Majoras_Mask_image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/The_Legend_of_Zelda_Majoras_Mask_image_1dkxM8u.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/The_Legend_of_Zelda_Ocarina_of_Time_image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/The_Legend_of_Zelda_Ocarina_of_Time_image_Js5LGxJ.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/The_Legend_of_Zelda_Tears_of_the_Kingdom_image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/The_Legend_of_Zelda_Tears_of_the_Kingdom_image_111k3s7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/The_Outer_Worlds_image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/The_Outer_Worlds_image_RcEgmAN.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/The_Witcher_2_Assassins_of_Kings_image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/The_Witcher_2_Assassins_of_Kings_image_tEdk9Hm.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/The_Witcher_3_Wild_Hunt_-_Blood_and_Wine_image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/The_Witcher_3_Wild_Hunt_-_Blood_and_Wine_image_wf1e2Eh.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/The_Witcher_3_Wild_Hunt_image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/The_Witcher_3_Wild_Hunt_image_oyFQG7v.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Uncharted_4_A_Thiefs_End_image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Uncharted_4_A_Thiefs_End_image_zHLHLBh.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Undertale_image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Undertale_image_FZ0Eklm.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/What_Remains_of_Edith_Finch_image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/What_Remains_of_Edith_Finch_image_DkLBLBJ.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Yoshis_Crafted_World_image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Yoshis_Crafted_World_image_wHcv4gD.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/game/game_details.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Game_Recommendation_System/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Game_Recommendation_System/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Game_Recommendation_System/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Game_Recommendation_System/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homepage/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/homepage/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/homepage/homepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/homepage/homepage.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,28 +212,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Django Server.Game_Recommendation_System.executor": "Run",
-    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "django.template.preview.state": "SHOW_EDITOR",
-    "git-widget-placeholder": "develop",
-    "last_opened_file_path": "D:/pycharmproject/djangoProject/Game_Recommendation_System",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Django Server.Game_Recommendation_System.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;django.template.preview.state&quot;: &quot;SHOW_EDITOR&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/pycharmproject/djangoProject/Game_Recommendation_System&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Game_Recommendation_System" type="Python.DjangoServer" factoryName="Django server">
       <module name="Game_Recommendation_System" />
@@ -125,8 +245,9 @@
         <env name="DJANGO_SETTINGS_MODULE" value="Game_Recommendation_System.settings" />
       </envs>
       <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.12 (Game_Recommendation_System)" />
       <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="launchJavascriptDebuger" value="false" />

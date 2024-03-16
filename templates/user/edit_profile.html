@@ -1,0 +1,35 @@
+<!-- edit_profile.html -->
+
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extra_head %}
+    <title>Edit Profile</title>
+    <link rel="stylesheet" href="{% static 'user/edit_profile.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div class="background-container"></div> 
+
+    <header class="title">GameZone</header> 
+
+    <div class="container-edit-profile">
+        <h2>Edit Profile</h2>
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="id_bio">Bio:</label>
+                {{ form.bio }}
+            </div>
+            <div class="form-group">
+                <label for="id_avatar">Avatar:</label>
+                {{ form.avatar }}
+            </div>
+            <div class="form-group">
+                <label for="id_favourite_genre">Favorite Genre:</label>
+                {{ form.favourite_genre }}
+            </div>
+            <button type="submit">Save Changes</button>
+        </form>
+    </div>
+{% endblock %}

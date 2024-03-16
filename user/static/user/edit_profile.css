@@ -1,0 +1,100 @@
+/* edit_profile.css */
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.background-container {
+    background: url("images/signup2.png");
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+}
+
+.title {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #cc04cf;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.container-edit-profile {
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, 0.95);
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    max-width: 400px;
+    padding: 45px;
+    margin-top: 50px;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+label {
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 0px;
+    padding-top: 10px;
+    font-size: 18px;
+}
+
+input[type="text"],
+input[type="password"],
+textarea,
+select {
+    width: 100%;
+    margin-top: 6px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+button[type="submit"] {
+    background-color: #cc04cf;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+}
+
+button[type="submit"]:hover {
+    background-color: #cc04cf;
+}
+
+@media screen and (max-width: 600px) {
+    .container-edit-profile {
+        padding: 30px;
+    }
+}

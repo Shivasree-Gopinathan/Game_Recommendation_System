@@ -1,0 +1,83 @@
+<!-- view_profile.html -->
+
+{% extends 'base.html' %}
+{#{% extends 'homepage/homepage.html' %}#}
+{% load static %}
+
+{#{% block na %}#}
+{% block extra_head %}
+    <title>User Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'user/view_profile.css' %}">
+{% endblock %}
+
+
+{% block content %}
+    <div class="background-container"></div>
+
+{#    <header class="title">GameZone</header>#}
+
+    <header>
+            <div class="logo">
+                <i class="fas fa-gamepad"></i>
+                <p>Game Zone</p>
+            </div>
+            <ul class="navbar">
+                <li><a href="{% url 'home' %}" class="active">Home</a></li>
+                <li><a href="#">Games</a></li>
+                <li><a href="#">Review</a></li>
+                <li><a href="{% url 'view_profile' %}" class="profile"><i class="fas fa-user-circle"></i></a></li>
+{#                <li class="search-container"> <i class="fas fa-search" id="searchIcon" onclick="toggleSearch()"></i>#}
+{#                    <input type="text" id="searchInput" class="hidden" onkeyup="searchGames()" placeholder="Search for games..."></li>#}
+            </ul>
+     </header>
+
+    <div class="container-profile">
+
+        <h2>User Profile</h2>
+        <div class="profile-details">
+            {% if user.userprofile.avatar %}
+                <div class="form-group avatar-container">
+                    <img src="{{ user_profile.avatar.url }}" class="avatar">
+                </div>
+            {% endif %}
+            <div class="user-detail-equality">
+                <p class="user-detail-heading">Username</p>
+                <p class="space">:</p>
+                <p class="description">{{ user.username }}</p>
+            </div>
+            <br />
+
+            <div class="user-detail-equality">
+                <p class="user-detail-heading">Email</p>
+                <p class="space">:</p>
+                <p class="description">{{ user.email }}</p>
+            </div>
+            <br />
+
+            <div class="user-detail-equality">
+                <p class="user-detail-heading" >Bio</p>
+                <p class="space" id="space-description">:</p>
+                <p class="description">{{ user.userprofile.bio }}</p>
+            </div>
+
+            <div class="user-detail-equality">
+                <p class="user-detail-heading">Favourite Genre</p>
+                <p class="space">:</p>
+                <p class="description">{{ user.userprofile.favourite_genre }}</p>
+            </div>
+        </div>
+        <div class="edit-profile-button-container">
+            <a href="{% url 'edit_profile' %}" class="edit-profile-button">Edit Profile</a>
+        </div>
+    </div>
+{% endblock %}
+
+
+
+
+
+

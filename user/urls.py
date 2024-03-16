@@ -9,7 +9,7 @@ urlpatterns = [
     path('signup/success/', views.login, name='signup_success'),
     path('login/', views.login_view, name='login'),
     path('home/', home, name='home'),
+    path('profile/', views.view_profile, name='view_profile'),
+    path('edit_profile/', views.edit_profile, name='edit_profile')
 ]
-# URL for the signup success page
-    # Add other URLs for your app as needed
 

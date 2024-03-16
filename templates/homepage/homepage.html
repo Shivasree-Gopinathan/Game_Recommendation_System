@@ -2,16 +2,16 @@
 {% load static %}
 
 {% block extra_head %}
-     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Games</title>
-{#    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">#}
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-    <link rel="stylesheet" type="text/css" href="{% static 'homepage/style.css' %}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Games</title>
+    {#    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">#}
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" type="text/css" href="{% static 'homepage/style.css' %}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 {% endblock %}
-
 
 {% block content %}
 <div class="container">
@@ -21,9 +21,10 @@
                 <p>Game Zone</p>
             </div>
             <ul class="navbar">
-                <li><a href="#" class="active">Home</a></li>
+                <li><a href="{% url 'home' %}" class="active">Home</a></li>
                 <li><a href="#">Games</a></li>
                 <li><a href="#">Review</a></li>
+                <li><a href="{% url 'view_profile' %}" class="profile"><i class="fas fa-user-circle"></i></a></li>
 {#                <li class="search-container"> <i class="fas fa-search" id="searchIcon" onclick="toggleSearch()"></i>#}
 {#                    <input type="text" id="searchInput" class="hidden" onkeyup="searchGames()" placeholder="Search for games..."></li>#}
             </ul>
@@ -36,7 +37,7 @@
                   <br>  Explore our vast collection of recommended games carefully curated by our expert team.From action-packed adventures to mind-bending puzzles, there's something for everyone.</p>
                 <button id="btn">Explore  Games! </button>
             </div>
-<div class="girl"></div>
+        <div class="girl"></div>
         </div>
         <div class="logo-section">
         <i class="fas fa-gamepad"></i>

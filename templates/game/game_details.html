@@ -1,11 +1,162 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-    <h1>Game Details Page.</h1>
-</body>
-</html>
+{% extends 'base.html' %}
 
+{% load static %}
+
+{% block extra_head %}
+    <title>Game Details</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'game/style.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div class="background-container">
+
+    <header>
+            <div class="logo">
+                <i class="fas fa-gamepad"></i>
+                <p>Game Zone</p>
+            </div>
+            <ul class="navbar">
+                <li><a href="{% url 'home' %}" class="active">Home</a></li>
+                <li><a href="#">Games</a></li>
+                <li><a href="#">Review</a></li>
+                <li><a href="{% url 'view_profile' %}" class="profile"><i class="fas fa-user-circle"></i></a></li>
+{#                <li class="search-container"> <i class="fas fa-search" id="searchIcon" onclick="toggleSearch()"></i>#}
+{#                    <input type="text" id="searchInput" class="hidden" onkeyup="searchGames()" placeholder="Search for games..."></li>#}
+            </ul>
+    </header>
+
+
+
+    <div class="game-details">
+        <div class="hero">
+            <img src="{{ game.image.url }}" alt="{{ game.title }}">
+            <div class="game-content">
+                <h1>{{ game.title }}</h1>
+                <div class="game-detail-equality">
+                    <p class="game-detail-heading">Genre</p>
+                    <p class="space">:</p>
+                    <p class="details">{{ game.genre }}</p>
+                </div>
+                <br>
+                <div class="game-detail-equality">
+                    <p class="game-detail-heading">Platform</p>
+                    <p class="space">:</p>
+                    {% for platform in game.platforms.all %}
+                        <p class="details">{{ platform.name }}, &nbsp;</p>
+                    {% endfor %}
+                </div>
+                <br>
+                <div class="game-detail-equality">
+                    <p class="game-detail-heading">Release Date</p>
+                    <p class="space">:</p>
+                    <p class="details">{{ game.release_date }}</p>
+                </div>
+                <br>
+                <div class="game-detail-equality">
+                    <p class="game-detail-heading">Developer</p>
+                    <p class="space">:</p>
+                    <p class="details">{{ game.developer }}</p>
+                </div>
+                <br>
+                <div class="game-detail-equality">
+                    <p class="game-detail-heading">Publisher</p>
+                    <p class="space">:</p>
+                    <p class="details">{{ game.publisher }}</p>
+                </div>
+                <br>
+                <div class="game-detail-equality">
+                    <p id="description">Description</p>
+                    <p id="space-description">:</p>
+                    <p class="details">{{ game.description }}</p>
+                </div>
+                <br>
+                <div class="game-detail-equality">
+                    <p class="game-detail-heading">Average Rating</p>
+                    <p class="space">:</p>
+                    <p class="details">{{ game.avg_rating }}</p>
+                </div>
+            <br>
+                <div class="game-detail-equality">
+                    <p class="game-detail-heading">Price</p>
+                    <p class="space">:</p>
+                    <p class="details">{{ game.price }}</p>
+                </div>
+            </div>
+        </div>
+    <div id="add-all-review">
+        <button id="add-review-btn" class="btn btn-primary">Add Review</button>
+        <button id="all-review-btn" class="btn btn-primary">All Reviews</button>
+    </div>
+    </div>
+    </div>
+
+    <div id="review-popup" class="popup">
+            <h2>Add Review</h2>
+            <form id="review-form" method="post" action="{% url 'add_review' game.id %}">
+                {% csrf_token %}
+                    <label for="rating">Rating:</label>
+{#                    <input type="number" name="rating" required class="input-rating">#}
+                    <select class="form-control" id="id_rating" name="rating" required>
+                        <option value="1">1 - Poor</option>
+                        <option value="2">2 - Fair</option>
+                        <option value="3">3 - Average</option>
+                        <option value="4">4 - Good</option>
+                        <option value="5">5 - Excellent</option>
+                    </select>
+                    <br />
+                    <label for="review" id="review-label">Review:</label>
+                    <textarea name="review" rows="4" required class="input-review" id="review"></textarea>
+
+                <div class="button-container">
+                    <button type="submit">Submit</button>
+                    <button id="cancel-review-btn" class="btn btn-secondary">Cancel</button>
+                </div>
+            </form>
+        </div>
+
+    <div id="all-reviews-popup" class="popup">
+    <h2>All Reviews</h2>
+    <div class="reviews-container">
+        {% for review in game_review %}
+            <div class="review">
+                <div class="review-header">
+                    <span class="username">{{ review.user }}</span>
+                    <span class="rating">{{ review.stars }}</span>
+                </div>
+                <p class="review-text">{{ review.review }}</p>
+            </div>
+        {% endfor %}
+    </div>
+    <button id="close-reviews-btn" class="btn btn-secondary">Close</button>
+</div>
+
+
+     <script>
+        document.getElementById('add-review-btn').addEventListener('click', function() {
+            document.querySelector('.background-container').classList.add('blur');
+            document.getElementById('review-popup').style.display = 'block';
+            {#document.getElementById('all-reviews-popup').style.display = 'block';#}
+        });
+
+        document.getElementById('all-review-btn').addEventListener('click', function() {
+            document.querySelector('.background-container').classList.add('blur');
+            {#document.getElementById('review-popup').style.display = 'block';#}
+            document.getElementById('all-reviews-popup').style.display = 'block';
+        });
+
+        document.getElementById('cancel-review-btn').addEventListener('click', function() {
+            document.querySelector('.background-container').classList.remove('blur');
+            document.getElementById('review-popup').style.display = 'none';
+        });
+
+        document.getElementById('close-reviews-btn').addEventListener('click', function() {
+            document.querySelector('.background-container').classList.remove('blur');
+            document.getElementById('all-reviews-popup').style.display = 'none';
+        });
+
+    </script>
+{% endblock %}

@@ -1,5 +1,7 @@
+from datetime import datetime
+
 from django.shortcuts import render
-from game.models import Game
+from game.models import Game, Platform
 from homepage.models import Genre
 from functools import reduce
 from django.db.models import Q
@@ -37,31 +39,9 @@ def game_search(request):
         games = Game.objects.all()
     return render(request, 'game_search.html', {'games': games})
 
-# def showgames(request):
-#     games = Game.objects.all()
-#     query = request.GET.get('q')
-#     genre = request.GET.get('genre')
-#     platform = request.GET.get('platform')
-#
-#     unique_genres = set()
-#     for game in games:
-#         unique_genres.update(game.genre.split(","))
-#     unique_genres = sorted(list(unique_genres))
-#
-#     if query:
-#         games = games.filter(title__icontains=query)
-#     if genre:
-#         games = games.filter(genre=genre)
-#     if platform:
-#         games = games.filter(platform__icontains=platform)
-#
-#     individual_genres = [g.strip() for genre in unique_genres for g in genre.split(",")]
-#
-#     return render(request, '../templates/homepage/showgames.html', {'games': games, 'unique_genres': individual_genres})
-
 
 def showgames(request):
-    games = Game.objects.all()
+    games = Game.objects.all().distinct()
     query = request.GET.get('q')
     genre = request.GET.get('genre')
     platform = request.GET.get('platform')
@@ -71,8 +51,15 @@ def showgames(request):
         unique_genres.update(game.genre.split(","))
     unique_genres = sorted(list(unique_genres))
 
-    if query:
-        games = games.filter(title__icontains=query)
+    ld = datetime(2021, 1, 1)
+    lessdategames = Game.objects.filter(release_date__gte=ld)
+    pc_platform = Platform.objects.get(name='Windows PC')
+    pcgames = Game.objects.filter(platforms=pc_platform)
+    main_content = 1
+
+    if query or genre:
+        main_content = 0
+        games = games.filter(title__icontains=query).distinct()
     if genre:
         # Split the input genre string and filter games based on any matching genre
         genres_list = [g.strip() for g in genre.split(",")]
@@ -81,4 +68,5 @@ def showgames(request):
     if platform:
         games = games.filter(platform__icontains=platform)
 
-    return render(request, 'homepage/showgames.html', {'games': games, 'unique_genres': unique_genres})
+
+    return render(request, 'homepage/showgames.html', {'games': games, 'unique_genres': unique_genres, 'less_dategames': lessdategames, 'pcgames': pcgames, 'main_content': main_content})

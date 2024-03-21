@@ -170,13 +170,14 @@
             // Add click event listener to the payment button
             paymentBtn.addEventListener("click", function() {
                 // Get the game title and price from the page elements
+                var gameid = {{ game.id }}
                 var gameTitle = document.getElementById("game-title").innerText;
                 var gamePrice = document.getElementById("game-price").innerText;
 
                 // Construct the URL with query parameters for the Django view
                 // You need to replace 'payment_view' with the actual name you used in your Django urlconf (urls.py)
                 var baseUrl = "{% url 'payments' %}";
-                var url = baseUrl + "?game_name=" + encodeURIComponent(gameTitle) + "&amount=" + encodeURIComponent(gamePrice);
+                var url = baseUrl + "?game_name=" + encodeURIComponent(gameTitle) + "&amount=" + encodeURIComponent(gamePrice) + "&game_id=" + encodeURIComponent(gameid);
 
                 // Redirect to the URL for processing payment
                 window.location.href = url;

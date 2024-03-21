@@ -1,6 +1,7 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, get_object_or_404
 from .forms import PaymentForm
 from .models import Payment
+from game.models import Game
 from django.contrib.auth.decorators import login_required
 
 
@@ -9,6 +10,8 @@ def make_payment(request):
     success_message = ''
     game_name = request.GET.get('game_name', '')
     amount = request.GET.get('amount', '')
+    game_id = request.GET.get('game_id',  '')
+    game = get_object_or_404(Game, pk=game_id)
     initial_data = {
         'game_name': request.GET.get('game_name', ''),  # Adjusted to 'title'
         'amount': request.GET.get('amount', '')  # Adjusted to 'price'
@@ -20,7 +23,7 @@ def make_payment(request):
             card_last_four = card_number[-4:]
             payment = Payment(
                 user=request.user,
-                game_name=initial_data['game_name'],
+                game=game,
                 amount=initial_data['amount'],
                 card_last_four=card_last_four,
             )
@@ -30,11 +33,11 @@ def make_payment(request):
             form.fields['game_name'].initial = game_name
             form.fields['amount'].initial = amount
     else:
-        initial_data = {'game_name': game_name, 'amount': amount}
+        initial_data = {'game_name': game_name, 'amount': amount, 'game_id': game_id}
         form = PaymentForm(initial=initial_data)
 
     return render(request, 'payment/payment.html', {'form': form, 'success_message': success_message,
-                                                    'game_name': game_name, 'amount': amount})
+                                                    'game_name': game_name, 'amount': amount, 'game_id': game_id})
 
 
 @login_required

@@ -13,7 +13,7 @@ from django.views import View
 
 def game_details(request, game_id):
     game = get_object_or_404(Game, pk=game_id)
-    user_has_paid = Payment.objects.filter(user=request.user, game_name=game.title).exists()
+    user_has_paid = Payment.objects.filter(user=request.user, game=game).exists()
     game_review = GameReview.objects.filter(game=game)
     for review in game_review:
         review.stars = render_stars(review.rating)

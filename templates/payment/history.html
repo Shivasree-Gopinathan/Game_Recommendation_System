@@ -1,31 +1,50 @@
 {% extends 'base.html' %}
 {% load static %}
+{% block extra_head %}
+    <title>Payment History</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-+0n0xVW2eSR5Zgb2q9WrMuuMSwUx6j7U3DBQk5rVjNExlSMXQz/i5XyJ2c5IQF5k" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href={% static 'user/signup.css' %}>']
+    <style>
+        .white-text {
+            color: #FFFFFF !important; /* Ensure white color is used */
+        }
+        .link-text {
+            color: #FFFFFF; /* or any other color */
+            text-decoration: underline; /* optional: adds an underline to indicate it's a link */
+        }
+    </style>
+{% endblock %}
 {% block content %}
+    <div class="background-container"></div>
 <div class="container">
-    <h2>Payment History</h2>
+    <a href="{% url 'home' %}" class="btn btn-primary my-3">Home</a>
     {% if payments %}
+        <h2>Games purchased by {{ request.user.username }}</h2>
     <table class="table">
         <thead>
             <tr>
-                <th>Game Title</th>
-                <th>Amount</th>
-                <th>Card Number</th>
-                <th>Payment Date</th>
+                <th class="white-text">Game Title</th>
+                <th class="white-text">Game Genre</th>
+                <th class="white-text">Amount</th>
+                <th class="white-text">Card Number</th>
+                <th class="white-text">Payment Date</th>
             </tr>
         </thead>
         <tbody>
             {% for payment in payments %}
             <tr>
-                <td>{{ payment.game_name }}</td>
-                <td>{{ payment.amount }}</td>
-                <td>**** **** **** {{ payment.card_last_four}}</td>
-                <td>{{ payment.payment_date|date:"Y-m-d H:i" }}</td>
+                <td class="white-text">{{ payment.game.title }}</td>
+                <td class="white-text">{{ payment.game.genre }}</td>
+                <td class="white-text">{{ payment.amount }}</td>
+                <td class="white-text">**** **** **** {{ payment.card_last_four}}</td>
+                <td class="white-text">{{ payment.payment_date|date:"Y-m-d H:i" }}</td>
             </tr>
             {% endfor %}
         </tbody>
     </table>
     {% else %}
-    <p>No payment history found.</p>
+    <h2>No games purchased by {{ request.user.username }}, <a href="{% url 'home' %}" class="link-text">click here</a> to browse games.</h2>
     {% endif %}
 </div>
 {% endblock %}

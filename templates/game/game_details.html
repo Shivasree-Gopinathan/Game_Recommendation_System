@@ -90,7 +90,11 @@
     <div id="add-all-review">
         <button id="add-review-btn" class="btn btn-primary">Add Review</button>
         <button id="all-review-btn" class="btn btn-primary">All Reviews</button>
-        <button id="payment-btn" class="btn btn-primary">Payment</button>
+        {% if not user_has_paid %}
+            <button id="payment-btn" class="btn btn-primary">Payment</button>
+        {% else %}
+            <button class="btn btn-secondary" disabled>Already Purchased</button>
+        {% endif %}
     </div>
     </div>
     </div>

@@ -1,0 +1,237 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'homepage/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+<div class="cont">
+<header>
+    <div class="logo">
+        <i class="fas fa-gamepad"></i>
+        <p>Game Zone</p>
+    </div>
+    <ul class="navbar">
+        <li><a href="{% url 'home' %}" class="active">Home</a></li>
+        <li><a href="{% url 'showgames' %}">Games</a></li>
+        <li><a href="#">Review</a></li>
+    </ul>
+</header>
+<br><br>
+<br><br>
+<form method="get" action="{% url 'showgames' %}" class="search-form">
+    <div class="search-container">
+        <input type="text" name="q" id="search-input" placeholder="Search by title...">
+{#        <button type="submit" class="search-btn"><i class="fas fa-search"></i></button>#}
+    </div>
+    <div class="filter-container">
+        <select name="genre" id="genre-select">
+            <option value="">All Genres</option>
+            {% for individual_genre in unique_genres %}
+                <option value="{{ individual_genre }}">{{ individual_genre }}</option>
+            {% endfor %}
+        </select>
+        <!-- Add dropdown for platforms if needed -->
+        <button type="submit" class="filter-btn">Apply Filters</button>
+    </div>
+</form>
+<br>
+</div>
+{#<div id="main-content">#}
+<section class="section-2">
+{% if main_content == 1 %}
+<div class="section-1-wrapper"><br>
+    <h1>Top Rated Games</h1>
+    <br>
+    <div class="owl-carousel section-1-img owl-theme">
+        {% for game in games %}
+            {% if game.avg_rating >= 4.9 %}
+                <a href="{% url 'game_details' game_id=game.id %}">
+                <div class="game-card">
+                    <img src="{{ game.image.url }}" alt="{{ game.title }}">
+                    <div class="game-info">
+                        <h2>{{ game.title }}</h2>
+                        <p>Rating: {{ game.avg_rating }}</p>
+                    </div>
+                </div>
+            {% endif %}
+        </a>
+        {% endfor %}
+    </div>
+</div>
+
+
+<br>
+<div class="section-1-wrapper">
+    <h1>New Releases</h1>
+    <br>
+    <div class="owl-carousel section-1-img owl-theme">
+        {% for game in less_dategames %}
+{#            {% if game.release_date >= '2021-01-01' %}#}
+            <a href="{% url 'game_details' game_id=game.id %}">
+                <div class="game-card">
+                    <img src="{{ game.image.url }}" alt="{{ game.title }}">
+                    <div class="game-info">
+                        <h2>{{ game.title }}</h2>
+                        <p>Release Date: {{ game.release_date }}</p>
+                        <!-- Add other relevant information here -->
+                    </div>
+                </div>
+            </a>
+{#            {% endif %}#}
+        {% endfor %}
+    </div>
+</div>
+
+
+<br>
+
+<div class="section-1-wrapper">
+    <h1>Games for Windows PC</h1>
+    <br>
+    <div class="owl-carousel section-1-img owl-theme">
+        {% for game in pcgames %}
+{#            {% if 'Microsoft Windows' in game.platform %}#}
+            <a href="{% url 'game_details' game_id=game.id %}">
+                <div class="game-card">
+                    <img src="{{ game.image.url }}" alt="{{ game.title }}">
+                    <div class="game-info">
+                        <h2>{{ game.title }}</h2>
+                        <p>Platform: Microsoft Windows</p>
+                    </div>
+                </div>
+            </a>
+{#            {% endif %}#}
+        {% endfor %}
+    </div>
+</div>
+
+<br>
+
+<br>
+
+<div class="section-1-wrapper">
+<h1>ALL GAMES</h1>
+        <br>
+<div class="owl-carousel section-1-img owl-theme">
+    {% for game in games %}
+        <a href="{% url 'game_details' game_id=game.id %}">
+        <div class="game-card item">
+            <img src="{{ game.image.url }}" alt="{{ game.title }}">
+            <div class="game-info">
+                <h2>{{ game.title }}</h2>
+            </div>
+        </div>
+        </a>
+    {% endfor %}
+ </div>
+</div>
+{% endif %}
+{#</div>#}
+
+{% if main_content == 0 %}
+<br>
+    <h1>Search Results</h1>
+    <br>
+    <div class="game-container-hover">
+    {% for game in games %}
+        <a href="{% url 'game_details' game_id=game.id %}">
+        <div class="game-card-hover">
+            <img src="{{ game.image.url }}" alt="{{ game.title }}">
+            <div class="game-title-overlay-hover">
+                <h2>{{ game.title }}</h2>
+            </div>
+        </div>
+        </a>
+    {% endfor %}
+</div>
+{% endif %}
+</section>
+
+<footer>
+        <div class="footer-body">
+            <div class="logo footer-logo">
+                <i class="fas fa-gamepad"></i>
+                <h1>The Game Zone</h1>
+            </div>
+            <ul>
+                <h3>Short Links</h3>
+                <li><a href="#">Arcade</a></li>
+                <li><a href="#">War Zone</a></li>
+                <li><a href="#">Fifa Game</a></li>
+                <li><a href="#">Pes 2020</a></li>
+                <li><a href="#">Xbox Game</a></li>
+            </ul>
+
+            <ul>
+                <h3>Action Games</h3>
+                <li><a href="#">Anpar</a></li>
+                <li><a href="#">BattleField</a></li>
+                <li><a href="#">The Ghost</a></li>
+                <li><a href="#">Fortnite</a></li>
+                <li><a href="#">Cold War</a></li>
+            </ul>
+            <ul>
+                <h3>Get In Touch</h3>
+                <li><a href="#"><i class="fab fa-facebook"></i>Facebook</a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i>Instagram</a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i>Twitter</a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i>Linkedin</a></li>
+            </ul>
+        </div>
+    </footer>
+    <div class="footer-bottom">
+        <p>Copyright &copy; All Right Reserved <span> GameZone </span> 2024</p>
+    </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        var numImages = $('.image-container img').length;
+    var numItems = numImages > 4 ? 4 : numImages; // Limit to 4 items if there are more than 4 image
+        $(".section-1-img").owlCarousel({
+            items: 4,
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 2000,
+            autoplayHoverPause: true,
+            margin: 10,
+            responsiveClass: true,
+            responsive:{
+                0:{
+                    items: 1
+                },
+                576:{
+                    items: 2
+                },
+                768:{
+                    items: 3
+                },
+                992:{
+                    items: 4
+                }
+            },
+        });
+         $('.search-form').submit(function(event){
+            {#event.preventDefault(); // Prevent default form submission#}
+
+            // Show main content and hide other sections
+            $('#main-content').hide();
+            console.log('Form submitted successfully!');
+            document.getElementById("main-content").style.display="none"
+            {#$('.section-1-wrapper').hide();#}
+        });
+    });
+</script>
+
+</body>
+</html>

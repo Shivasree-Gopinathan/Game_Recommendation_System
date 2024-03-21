@@ -90,6 +90,7 @@
     <div id="add-all-review">
         <button id="add-review-btn" class="btn btn-primary">Add Review</button>
         <button id="all-review-btn" class="btn btn-primary">All Reviews</button>
+        <button id="payment-btn" class="btn btn-primary">Payment</button>
     </div>
     </div>
     </div>
@@ -156,6 +157,24 @@
         document.getElementById('close-reviews-btn').addEventListener('click', function() {
             document.querySelector('.background-container').classList.remove('blur');
             document.getElementById('all-reviews-popup').style.display = 'none';
+        });
+
+        document.addEventListener("DOMContentLoaded", function() {
+            // Get the payment button element
+            var paymentBtn = document.getElementById("payment-btn");
+
+            // Add click event listener to the payment button
+            paymentBtn.addEventListener("click", function() {
+                // Redirect to the URL for processing payment
+               var gameTitle = document.getElementById("game-title").innerText;
+                var gamePrice = document.getElementById("game-price").innerText;
+
+                // Construct the URL with query parameters
+                var url = "{% url 'payment_page' %}?title=" + encodeURIComponent(gameTitle) + "&price=" + encodeURIComponent(gamePrice);
+
+                // Redirect to the URL for processing payment
+                window.location.href = url;
+            });
         });
 
     </script>

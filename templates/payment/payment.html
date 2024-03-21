@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block extra_head %}
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-+0n0xVW2eSR5Zgb2q9WrMuuMSwUx6j7U3DBQk5rVjNExlSMXQz/i5XyJ2c5IQF5k" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href={% static 'user/signup.css' %}>
+{#    <script src="https://www.paypal.com/sdk/js?client-id=AXRpQIC6Ar-Va33TF4AU9G7lsgylt3qNipL4TotwzbQLrHnhTSKWiLeaZ1xEtlAT9NcmJapUeuLBb8I1&currency=CAD"></script>#}
+    <script src="https://www.paypal.com/sdk/js?client-id=test&currency=USD"></script>
+{% endblock %}
+
+{% block title %}Payment Page{% endblock %}
+{% block content %}
+    <div class="background-container"></div>
+
+    <div class="title">Payment</div>
+
+<div class="container-signup">
+    <h1>Payment</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="id_game_name">Game Name:</label>
+        {{ form.game_name }}
+        <br>
+        <label for="id_amount">Amount:</label>
+        {{ form.amount }}
+        <br>
+        <label for="id_credit_card_number">Credit Card Number:</label>
+        {{ form.credit_card_number }}
+        <br>
+        <label for="month">Expiry Date (MM):</label>
+        {{ form.month }}
+        <br>
+        <label for="id_year">Expiry Year (YYYY):</label>
+        {{ form.year }}
+        <br>
+        <label for="id_cvv">CVV:</label>
+        {{ form.cvv }}
+        <br>
+        <input type="submit" value="Pay Now">
+    </form>
+</div>
+
+    <script>
+        $(document).ready(function() {
+        // Get game title and price from button response values
+            var gameTitle = "Default Game Title";  // Replace with the actual default game title
+            var gamePrice = "Default Game Price";  // Replace with the actual default game price
+
+            paypal.Buttons({
+                createOrder: function(data, actions) {
+                    return actions.order.create({
+                        purchase_units: [{
+                            amount: {
+                                value: gamePrice // Use the default game price
+                            }
+                        }]
+                    });
+                },
+                onApprove: function(data, actions) {
+                    return actions.order.capture().then(function(details) {
+                        // Handle post-approval actions here, such as submitting form data
+                        document.getElementById("payment-form").submit(); // Submit the form after successful payment capture
+                    });
+                }
+            }).render('#paypal-button-container'); // Render the PayPal buttons
+
+            // Set default game title and price in the HTML form
+            document.getElementById("id_game_name").value = gameTitle;
+            document.getElementById("id_amount").value = gamePrice;
+    });
+    </script>
+{% endblock %}

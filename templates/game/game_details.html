@@ -35,7 +35,7 @@
         <div class="hero">
             <img src="{{ game.image.url }}" alt="{{ game.title }}">
             <div class="game-content">
-                <h1>{{ game.title }}</h1>
+                <h1 id="game-title">{{ game.title }}</h1>
                 <div class="game-detail-equality">
                     <p class="game-detail-heading">Genre</p>
                     <p class="space">:</p>
@@ -83,7 +83,7 @@
                 <div class="game-detail-equality">
                     <p class="game-detail-heading">Price</p>
                     <p class="space">:</p>
-                    <p class="details">{{ game.price }}</p>
+                    <p class="details" id="game-price">{{ game.price }}</p>
                 </div>
             </div>
         </div>
@@ -165,12 +165,14 @@
 
             // Add click event listener to the payment button
             paymentBtn.addEventListener("click", function() {
-                // Redirect to the URL for processing payment
-               var gameTitle = document.getElementById("game-title").innerText;
+                // Get the game title and price from the page elements
+                var gameTitle = document.getElementById("game-title").innerText;
                 var gamePrice = document.getElementById("game-price").innerText;
 
-                // Construct the URL with query parameters
-                var url = "{% url 'payment_page' %}?title=" + encodeURIComponent(gameTitle) + "&price=" + encodeURIComponent(gamePrice);
+                // Construct the URL with query parameters for the Django view
+                // You need to replace 'payment_view' with the actual name you used in your Django urlconf (urls.py)
+                var baseUrl = "{% url 'payments' %}";
+                var url = baseUrl + "?game_name=" + encodeURIComponent(gameTitle) + "&amount=" + encodeURIComponent(gamePrice);
 
                 // Redirect to the URL for processing payment
                 window.location.href = url;

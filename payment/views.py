@@ -6,37 +6,39 @@ from django.contrib.auth.decorators import login_required
 
 @login_required
 def make_payment(request):
+    success_message = ''
+    game_name = request.GET.get('game_name', '')
+    amount = request.GET.get('amount', '')
+    initial_data = {
+        'game_name': request.GET.get('game_name', ''),  # Adjusted to 'title'
+        'amount': request.GET.get('amount', '')  # Adjusted to 'price'
+    }
     if request.method == "POST":
         form = PaymentForm(request.POST)
         if form.is_valid():
-            Payment.objects.create(
+            card_number = form.cleaned_data['credit_card_number']
+            card_last_four = card_number[-4:]
+            payment = Payment(
                 user=request.user,
-                game_name=form.cleaned_data['game_name'],
-                amount=form.cleaned_data['amount'],
+                game_name=initial_data['game_name'],
+                amount=initial_data['amount'],
+                card_last_four=card_last_four,
             )
-            # Redirect to a new URL:
-            return redirect('success_url')  # Change 'success_url' to your success page's URL
+            payment.save()
+            success_message = "Payment successful!"
+        else:
+            form.fields['game_name'].initial = game_name
+            form.fields['amount'].initial = amount
     else:
-        form = PaymentForm(initial={'game_name': request.GET.get('game_name', ''), 'amount': request.GET.get('amount', ' ')})
+        initial_data = {'game_name': game_name, 'amount': amount}
+        form = PaymentForm(initial=initial_data)
 
-    return render(request, 'payment/payment.html', {'form': form})
+    return render(request, 'payment/payment.html', {'form': form, 'success_message': success_message,
+                                                    'game_name': game_name, 'amount': amount})
 
-#
-# def payment_page(request):
-#     if request.method == 'POST':
-#         form = PaymentForm(request.POST)
-#         if form.is_valid():
-#             # user = form.save()  # Save the user to the database
-#             #
-#             # UserProfile.objects.create(user=user)
-#             # login(request, user)  # Log in the user after successful signup
-#             return redirect('payment_page')  # Redirect to signup success page
-#     else:
-#         form = PaymentForm()
-#     return render(request, 'payment/payment.html', {'form': form})
-#
-#
-# def process_payment(request):
-#     if request.method == 'POST':
-#         return render(request, 'payment/payment.html')
-#     return redirect('payment_page')
+
+@login_required
+def payment_history(request):
+    payments = Payment.objects.filter(user=request.user).order_by('-payment_date')
+    return render(request, 'payment/history.html', {'payments': payments})
+

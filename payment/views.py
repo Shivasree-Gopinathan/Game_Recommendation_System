@@ -28,7 +28,7 @@ def make_payment(request):
                 card_last_four=card_last_four,
             )
             payment.save()
-            success_message = "Payment successful!"
+            success_message = f"Transaction successful! {request.user.username} purchased {game.title} for ${game.price} successfully."
         else:
             form.fields['game_name'].initial = game_name
             form.fields['amount'].initial = amount

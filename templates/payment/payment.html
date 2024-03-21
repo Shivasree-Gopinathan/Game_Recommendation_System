@@ -1,15 +1,36 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block extra_head %}
-    <title>Sign Up</title>
+    <title>Payment Page</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-+0n0xVW2eSR5Zgb2q9WrMuuMSwUx6j7U3DBQk5rVjNExlSMXQz/i5XyJ2c5IQF5k" crossorigin="anonymous"></script>
     <link rel="stylesheet" href={% static 'user/signup.css' %}>
+    <link rel="stylesheet" href={% static 'payment/style.css' %}>
+    <style>
+        .button-primary {
+            background-color: white;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 100%;
+            margin-top: 20px;
+            font-weight: bold;
+            display: block;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .button-primary:hover {
+            color: red;
+        }
+    </style>
 {% endblock %}
 
 {% block content %}
     <div class="background-container"></div>
-    <div class="title">Payment</div>
 {% if not success_message %}
 <div class="container-signup">
     <h1>Payment</h1>
@@ -33,9 +54,12 @@
         {{ form.cvv }}
         {{ form.cvv.errors }}
         <br>
-        <button type="submit">Pay Now</button>
-        <br>
-        <a href="{% url 'game_details' game_id=game_id %}" class="btn btn-primary">Cancel</a>
+        <div class="form-row text-center"> <!-- Add form-row and text-center for proper alignment -->
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary mb-2">Pay Now</button>
+                <a href="{% url 'game_details' game_id=game_id %}" class="button-primary" role="button">Cancel</a>
+            </div>
+        </div>
     </form>
 </div>
     {% else %}

@@ -30,7 +30,7 @@
     </header>
 
 
-
+    <div class="scroll-content">
     <div class="game-details">
         <div class="hero">
             <img src="{{ game.image.url }}" alt="{{ game.title }}">
@@ -90,10 +90,31 @@
     <div id="add-all-review">
         <button id="add-review-btn" class="btn btn-primary">Add Review</button>
         <button id="all-review-btn" class="btn btn-primary">All Reviews</button>
+{#        <button onclick="location.href='{% url 'cart_page' %}'" class="download-button">Download</button>#}
     </div>
     </div>
     </div>
-
+    
+    <section class="section-1">
+    <div class="section-1-wrapper">
+        <h1>SIMILAR GAMES</h1>
+        <br>
+        <div class="owl-carousel section-1-img">
+            {% for similar_game in similar_genre_games %}
+                <a href="{% url 'game_details' game_id=game.id %}">
+                    <div class="game-card">
+                        <img src="{{ similar_game.image.url }}" alt="{{ similar_game.title }}">
+                        <div class="game-info">
+                            <h2>{{ similar_game.title }}</h2>
+                        </div>
+                    </div>
+                </a>
+            {% endfor %}
+        </div>
+    </div>
+    </section>
+    </div>
+    
     <div id="review-popup" class="popup">
             <h2>Add Review</h2>
             <form id="review-form" method="post" action="{% url 'add_review' game.id %}">
@@ -134,9 +155,14 @@
     <button id="close-reviews-btn" class="btn btn-secondary">Close</button>
 </div>
 
+     <!-- Include jQuery (required by Owl Carousel) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <!-- Include Owl Carousel JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
      <script>
-        document.getElementById('add-review-btn').addEventListener('click', function() {
+
+       document.getElementById('add-review-btn').addEventListener('click', function() {
             document.querySelector('.background-container').classList.add('blur');
             document.getElementById('review-popup').style.display = 'block';
             {#document.getElementById('all-reviews-popup').style.display = 'block';#}
@@ -158,5 +184,32 @@
             document.getElementById('all-reviews-popup').style.display = 'none';
         });
 
+
+
+    $(document).ready(function(){
+        $(".owl-carousel").owlCarousel({
+            items: 5, // Number of items to display in the carousel
+            loop: true, // Enable loop
+            autoplay: true, // Auto-play enabled
+            autoplayTimeout: 2000, // Auto-play interval (3 seconds)
+            autoplayHoverPause: true, // Pause on hover
+            margin: 10, // Add margin between items
+            responsiveClass:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                576:{
+                    items:2
+                },
+                768:{
+                    items:3
+                },
+                992:{
+                    items:4
+                }
+            }
+        });
+    });
     </script>
 {% endblock %}

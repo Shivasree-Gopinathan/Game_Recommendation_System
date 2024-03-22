@@ -15,7 +15,8 @@ def game_details(request, game_id):
     game_review = GameReview.objects.filter(game=game)
     for review in game_review:
         review.stars = render_stars(review.rating)
-    return render(request, 'game/game_details.html', {'game': game, 'game_review': game_review})
+    similar_genre_games = Game.objects.filter(genre=game.genre).exclude(id=game_id)[:]
+    return render(request, 'game/game_details.html', {'game': game, 'game_review': game_review, 'similar_genre_games': similar_genre_games})
 
 
 def render_stars(rating):

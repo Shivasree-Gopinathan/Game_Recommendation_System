@@ -172,27 +172,6 @@
     "price": 300
   },
   {
-    "title": "Celeste",
-    "genre": "Platformer",
-    "platform": [
-      "Windows PC",
-      "macOS",
-      "Linux",
-      "PlayStation 4",
-      "Xbox One",
-      "Nintendo Switch",
-      "Android",
-      "iOS"
-    ],
-    "release_date": "2018-01-25",
-    "developer": "Matt Makes Games",
-    "publisher": "Matt Makes Games",
-    "description": "A 2D platformer video game developed by Matt Makes Games. Players control Madeline, a young woman with anxiety, as she attempts to climb Celeste Mountain.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Celeste_box_art_full.png/1024px-Celeste_box_art_full.png",
-    "avg_rating": 4.9,
-    "price": 350
-  },
-  {
     "title": "Portal 2",
     "genre": "Puzzle-platformer",
     "platform": [
@@ -353,54 +332,6 @@
     "price": 65
   },
   {
-    "title": "The Witcher 3: Wild Hunt - Blood and Wine",
-    "genre": "Action RPG",
-    "platform": [
-      "Windows PC",
-      "PlayStation 4",
-      "Xbox One"
-    ],
-    "release_date": "2016-05-31",
-    "developer": "CD Projekt Red",
-    "publisher": "CD Projekt",
-    "description": "The second and final expansion pack for the action role-playing video game The Witcher 3: Wild Hunt, developed and published by CD Projekt Red.",
-    "image": "https://upload.wikimedia.org/wikipedia/en/0/0c/Witcher_3_cover_art.jpg",
-    "avg_rating": 4.8,
-    "price": 45
-  },
-  {
-    "title": "Red Dead Redemption 2: Online",
-    "genre": "Action-adventure",
-    "platform": [
-      "PlayStation 4",
-      "Xbox One",
-      "Windows PC"
-    ],
-    "release_date": "2018-11-27",
-    "developer": "Rockstar Studios",
-    "publisher": "Rockstar Games",
-    "description": "An online multiplayer action-adventure game developed and published by Rockstar Games. It is a part of Red Dead Redemption 2, set in the wild west.",
-    "image": "https://upload.wikimedia.org/wikipedia/en/4/44/Red_Dead_Redemption_II.jpg",
-    "avg_rating": 4.2,
-    "price": 135
-  },
-  {
-    "title": "Monster Hunter: World",
-    "genre": "Action RPG",
-    "platform": [
-      "PlayStation 4",
-      "Xbox One",
-      "Windows PC"
-    ],
-    "release_date": "2018-01-26",
-    "developer": "Capcom",
-    "publisher": "Capcom",
-    "description": "An action role-playing game developed and published by Capcom. Players take on the role of a hunter who hunts monsters in a large, open world.",
-    "image": "https://upload.wikimedia.org/wikipedia/en/1/1b/Monster_Hunter_World_cover_art.jpg",
-    "avg_rating": 4.1,
-    "price": 210
-  },
-  {
     "title": "Sekiro: Shadows Die Twice",
     "genre": "Action-adventure",
     "platform": [
@@ -415,20 +346,6 @@
     "image": "https://upload.wikimedia.org/wikipedia/en/6/6e/Sekiro_art.jpg",
     "avg_rating": 4.6,
     "price": 220
-  },
-  {
-    "title": "The Last Guardian",
-    "genre": "Action-Adventure",
-    "platform": [
-      "PlayStation 4"
-    ],
-    "release_date": "2016-12-06",
-    "developer": "SIE Japan Studio",
-    "publisher": "Sony Interactive Entertainment",
-    "description": "A boy befriends a mythical creature and embarks on a journey to unravel ancient mysteries.",
-    "image": "https://upload.wikimedia.org/wikipedia/en/2/25/The_Last_Guardian_cover_art.jpg",
-    "avg_rating": 4.2,
-    "price": 310
   },
   {
     "title": "A Plague Tale: Innocence",
@@ -501,25 +418,6 @@
     "image": "https://upload.wikimedia.org/wikipedia/en/5/50/INSIDE_Xbox_One_cover_art.png",
     "avg_rating": 4.5,
     "price": 213
-  },
-  {
-    "title": "What Remains of Edith Finch",
-    "genre": "Narrative adventure, Exploration",
-    "platform": [
-      "PC",
-      "PlayStation 4",
-      "Xbox One",
-      "macOS",
-      "Nintendo Switch",
-      "Mobile"
-    ],
-    "release_date": "2017-09-15",
-    "developer": "Giant Sparrow",
-    "publisher": "Annapurna Interactive",
-    "description": "Edith Finch explores her family's history by investigating their mysterious deaths through interactive stories.",
-    "image": "https://upload.wikimedia.org/wikipedia/en/7/79/What_Remains_of_Edith_Finch_cover_art.jpg",
-    "avg_rating": 4.6,
-    "price": 256
   },
   {
     "title": "Super Metroid",
@@ -598,22 +496,6 @@
     "image": "https://upload.wikimedia.org/wikipedia/en/a/a3/Official_cover_art_for_Bioshock_Infinite.jpg",
     "avg_rating": 4.8,
     "price": 124
-  },
-  {
-    "title": "The Elder Scrolls IV: Oblivion",
-    "genre": "Action RPG",
-    "platform": [
-      "PlayStation 3",
-      "Xbox 360",
-      "Microsoft Windows"
-    ],
-    "release_date": "2006-03-20",
-    "developer": "Bethesda Game Studios",
-    "publisher": "Bethesda Softworks",
-    "description": "Oblivion is an expansive open-world RPG, offering a vast fantasy realm to explore, filled with quests, dungeons, and a rich lore.",
-    "image": "https://upload.wikimedia.org/wikipedia/en/4/4b/The_Elder_Scrolls_IV_Oblivion_cover.png",
-    "avg_rating": 4.7,
-    "price": 132
   },
   {
     "title": "Divinity: Original Sin 2",
@@ -784,34 +666,6 @@
     "image": "https://upload.wikimedia.org/wikipedia/en/5/51/Minecraft_cover.png",
     "avg_rating": 4.7,
     "price": 220
-  },
-  {
-    "title": "Splatoon 2",
-    "genre": "Third-person Shooter",
-    "platform": [
-      "Nintendo Switch"
-    ],
-    "release_date": "2017-07-21",
-    "developer": "Nintendo EPD",
-    "publisher": "Nintendo",
-    "description": "Splatoon 2 is a colorful third-person shooter where players control squid-like characters, engaging in vibrant and fast-paced multiplayer battles. The game is known for its unique gameplay and family-friendly design.",
-    "image": "https://upload.wikimedia.org/wikipedia/en/4/49/Splatoon_2.jpg",
-    "avg_rating": 4.8,
-    "price": 166
-  },
-  {
-    "title": "Yoshi's Crafted World",
-    "genre": "Platformer",
-    "platform": [
-      "Nintendo Switch"
-    ],
-    "release_date": "2019-03-29",
-    "developer": "Good-Feel",
-    "publisher": "Nintendo",
-    "description": "Yoshi's Crafted World is a delightful platformer where players guide Yoshi through a world made of everyday objects. The game features charming visuals, creative level design, and cooperative multiplayer.",
-    "image": "https://upload.wikimedia.org/wikipedia/en/3/38/Yoshi%27s_Crafted_World.jpg",
-    "avg_rating": 4.7,
-    "price": 222
   },
   {
     "title": "Kirby Star Allies",
@@ -990,34 +844,6 @@
     "price": 155
   },
   {
-    "title": "Fire Emblem: Three Houses",
-    "genre": "Tactical RPG",
-    "platform": [
-      "Nintendo Switch"
-    ],
-    "release_date": "2019-07-26",
-    "developer": "Intelligent Systems",
-    "publisher": "Nintendo",
-    "description": "Fire Emblem: Three Houses is a tactical RPG with deep storytelling and strategic battles. Players take on the role of a professor at a military academy, shaping the destinies of their students.",
-    "image": "https://upload.wikimedia.org/wikipedia/en/1/16/Fire_Emblem_Three_Houses.jpg",
-    "avg_rating": 4.9,
-    "price": 120
-  },
-  {
-    "title": "Hollow Knight: Silksong",
-    "genre": "Metroidvania",
-    "platform": [
-      "Multiple Platforms"
-    ],
-    "release_date": "2024-03-02",
-    "developer": "Team Cherry",
-    "publisher": "Team Cherry",
-    "description": "Hollow Knight: Silksong is the highly anticipated sequel to Hollow Knight. Players control Hornet, a princess-protector, as she embarks on a journey through a new kingdom filled with challenging enemies and mysteries.",
-    "image": "https://upload.wikimedia.org/wikipedia/en/5/53/Hollow_Knight_Silksong_cover_art.jpg",
-    "avg_rating": 4.7,
-    "price": 180
-  },
-  {
     "title": "Cyberpunk 2077",
     "genre": "Action RPG",
     "platform": [
@@ -1100,20 +926,6 @@
     "image": "https://upload.wikimedia.org/wikipedia/en/e/e7/The_Outer_Worlds_cover_art.png",
     "avg_rating": 4.7,
     "price": 180
-  },
-  {
-    "title": "No Man's Sky",
-    "genre": "Action-adventure, Survival",
-    "platform": [
-      "Multiple Platforms"
-    ],
-    "release_date": "2016-08-09",
-    "developer": "Hello Games",
-    "publisher": "Hello Games",
-    "description": "No Man's Sky is an expansive action-adventure and survival game set in a procedurally generated universe. Players explore planets, trade, and engage in space exploration with the goal of reaching the center of the galaxy.",
-    "image": "https://upload.wikimedia.org/wikipedia/en/6/67/No_Man%27s_Sky.jpg",
-    "avg_rating": 4.3,
-    "price": 140
   },
   {
     "title": "NieR Replicant ver.1.22474487139...",

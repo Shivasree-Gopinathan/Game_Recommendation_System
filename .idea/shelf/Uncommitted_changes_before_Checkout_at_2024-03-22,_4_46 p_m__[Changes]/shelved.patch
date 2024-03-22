@@ -1,0 +1,17 @@
+Index: user/forms.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>from django import forms\nfrom django.contrib.auth.forms import UserCreationForm\nfrom django.contrib.auth.models import User\nfrom django.contrib.auth.forms import UserCreationForm, AuthenticationForm\n\nclass SignUpForm(UserCreationForm):\n    email = forms.EmailField(max_length=254, help_text='Required. Inform a valid email address.')\n\n    class Meta:\n        model = User\n        fields = ['username', 'email', 'password1', 'password2']  # password1 and password2 are for password confirmation\n\n\nclass LoginForm(AuthenticationForm):\n    class Meta:\n        model = User\n        fields = ['username', 'password']
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/user/forms.py b/user/forms.py
+--- a/user/forms.py	(revision 218ad76a356fdc55af9bd6a7bf915186b43ebba2)
++++ b/user/forms.py	(date 1711140186482)
+@@ -14,4 +14,4 @@
+ class LoginForm(AuthenticationForm):
+     class Meta:
+         model = User
+-        fields = ['username', 'password']
+\ No newline at end of file
++        fields = ['username', 'password']

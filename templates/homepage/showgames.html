@@ -22,6 +22,7 @@
         <li><a href="{% url 'home' %}" class="active">Home</a></li>
         <li><a href="{% url 'showgames' %}">Games</a></li>
         <li><a href="#">Review</a></li>
+        <li><a href="{% url 'view_profile' %}" class="profile"><i class="fas fa-user-circle"></i></a></li>
     </ul>
 </header>
 <br><br>
@@ -138,20 +139,24 @@
 
 {% if main_content == 0 %}
 <br>
-    <h1>Search Results</h1>
-    <br>
-    <div class="game-container-hover">
-    {% for game in games %}
-        <a href="{% url 'game_details' game_id=game.id %}">
-        <div class="game-card-hover">
-            <img src="{{ game.image.url }}" alt="{{ game.title }}">
-            <div class="game-title-overlay-hover">
-                <h2>{{ game.title }}</h2>
-            </div>
+    <section class="section-1">
+    <div class="section-1-wrapper">
+        <h1>Search Results</h1>
+        <br>
+        <div class="owl-carousel section-1-img">
+            {% for game in games %}
+                <a href="{% url 'game_details' game_id=game.id %}">
+                    <div class="game-card">
+                        <img src="{{ game.image.url }}" alt="{{ game.title }}">
+                        <div class="game-info">
+                            <h2>{{ game.title }}</h2>
+                        </div>
+                    </div>
+                </a>
+            {% endfor %}
         </div>
-        </a>
-    {% endfor %}
-</div>
+    </div>
+    </section>
 {% endif %}
 </section>
 
@@ -196,31 +201,35 @@
 
 <script>
     $(document).ready(function(){
-        var numImages = $('.image-container img').length;
-    var numItems = numImages > 4 ? 4 : numImages; // Limit to 4 items if there are more than 4 image
-        $(".section-1-img").owlCarousel({
-            items: 4,
-            loop: true,
-            autoplay: true,
-            autoplayTimeout: 2000,
-            autoplayHoverPause: true,
-            margin: 10,
-            responsiveClass: true,
-            responsive:{
-                0:{
-                    items: 1
+        // Count the number of game cards
+        var numGameCards = $('.section-1-img .game-card').length;
+
+        // Determine the number of items to show in the carousel (maximum 4)
+        var numItems = Math.min(numGameCards, 4);
+
+            $(".section-1-img").owlCarousel({
+                items: numItems,
+                loop: numItems > 1,
+                autoplay: true,
+                autoplayTimeout: 2000,
+                autoplayHoverPause: true,
+                margin: 10,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    576: {
+                        items: 2
+                    },
+                    768: {
+                        items: 3
+                    },
+                    992: {
+                        items: 4
+                    }
                 },
-                576:{
-                    items: 2
-                },
-                768:{
-                    items: 3
-                },
-                992:{
-                    items: 4
-                }
-            },
-        });
+            });
          $('.search-form').submit(function(event){
             {#event.preventDefault(); // Prevent default form submission#}
 

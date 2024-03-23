@@ -27,11 +27,10 @@
             </div>
             <ul class="navbar">
                 <li><a href="{% url 'home' %}" class="active">Home</a></li>
-                <li><a href="#">Games</a></li>
-                <li><a href="#">Review</a></li>
+                <li><a href="{% url 'showgames' %}">Games</a></li>
+                <li><a href="{% url 'contact' %}">Contact Us</a></li>
+                <li><a href="{% url 'login' %}">Logout</a></li>
                 <li><a href="{% url 'view_profile' %}" class="profile"><i class="fas fa-user-circle"></i></a></li>
-{#                <li class="search-container"> <i class="fas fa-search" id="searchIcon" onclick="toggleSearch()"></i>#}
-{#                    <input type="text" id="searchInput" class="hidden" onkeyup="searchGames()" placeholder="Search for games..."></li>#}
             </ul>
      </header>
 

@@ -22,10 +22,7 @@
             </div>
             <ul class="navbar">
                 <li><a href="{% url 'home' %}" class="active">Home</a></li>
-                <li><a href="{% url 'showgames' %}">Games</a></li>
-                <li><a href="{% url 'contact' %}">Contact Us</a></li>
-                <li><a href="{% url 'login' %}">Logout</a></li>
-                <li><a href="{% url 'view_profile' %}" class="profile"><i class="fas fa-user-circle"></i></a></li>
+                <li><a href="{% url 'signup' %}" class="active">Sign Up</a></li>
             </ul>
         </header>
             <div class="content-wrapper">
@@ -34,8 +31,11 @@
                 <p>Welcome to <span>Game Zone</span>, your go-to hub for gaming excitement!<br>
                     Discover recommended games, choose your favorites, and dive into endless entertainment. Join us today and unleash your gaming passion!<br>
                   <br>  Explore our vast collection of recommended games carefully curated by our expert team.From action-packed adventures to mind-bending puzzles, there's something for everyone.</p>
-                <button id="btn" onclick="window.location='{% url 'showgames' %}'">Explore Games!</button>
-            </div>
+<a href="{% url 'signup' %}">
+    <button id="btn">
+        <span style="color: white">Explore Games!</span>
+    </button>
+</a>            </div> 
         <div class="girl"></div>
         </div>
         <div class="logo-section">
@@ -55,7 +55,7 @@
                             <h2>{{ game.title }}</h2>
                         </div>
                     </div>
-{#                </a>#}
+                </a>
             {% endfor %}
         </div>
     </div>
@@ -72,8 +72,23 @@
             </div>
             {% endfor %}
         </div>
+{#    <!-- Navigation arrows -->#}
+{#    <button class="prev"><i class="fa fa-chevron-left"></i></button>#}
+{#    <button class="next"><i class="fa fa-chevron-right"></i></button>#}
 </div>
+{#        <div class="game-categories">#}
+{#            <h1>GAME CATEGORIES</h1>#}
+{#            <div class="owl-carousel game-wrapper">#}
+{#                <a href="#"><div class="gw gw-1"></div></a>#}
+{#                <a href="#"><div class="gw gw-2"></div></a>#}
+{#                <a href="#"><div class="gw gw-3"></div></a>#}
+{#                <a href="#"><div class="gw gw-4"></div></a>#}
+{#                <a href="#"><div class="gw gw-5"></div></a>#}
+{#                <a href="#"><div class="gw gw-6"></div></a>#}
+{#                <a href="#"><div class="gw gw-7"></div></a>#}
+{#            </div>#}
 
+{#        </div>#}
     </section>
 <footer>
     <div class="footer-body">
@@ -81,7 +96,6 @@
             <i class="fas fa-gamepad"></i>
             <h1>The Game Zone</h1>
         </div>
-        
         <ul class="social-links">
             <h3>Get In Touch</h3>
             <li><a href="#"><i class="fab fa-facebook"></i>Facebook</a></li>
@@ -104,31 +118,7 @@
 
 <!-- Initialize Owl Carousel -->
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const form = document.getElementById('contactForm');
 
-        form.addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent form submission
-            // Simulate form submission with AJAX (assuming you're not using AJAX already)
-            fetch(form.action, {
-                method: 'POST',
-                body: new FormData(form),
-            })
-            .then(response => {
-                if (response.ok) {
-                    alert('Thank you for contacting us!'); // Show popup message
-                    form.reset(); // Optionally reset the form
-                } else {
-                    throw new Error('Failed to submit form');
-                }
-            })
-            .catch(error => {
-                console.error('Error:', error);
-                // Handle errors if any
-            });
-        });
-    });
-    
     $(document).ready(function(){
         $(".owl-carousel").owlCarousel({
             items: 5, // Number of items to display in the carousel
@@ -155,4 +145,27 @@
         });
     });
 </script>
+
+{#        <div class="game-categories">#}
+{#            <h1>GAME CATEGORIES</h1>#}
+{#            <div class="game-wrapper">#}
+{#                <a href="#"><div class="gw gw-1"></div></a>#}
+{#                <a href="#"><div class="gw gw-2"></div></a>#}
+{#                <a href="#"><div class="gw gw-3"></div></a>#}
+{#                <a href="#"><div class="gw gw-4"></div></a>#}
+{#                <a href="#"><div class="gw gw-5"></div></a>#}
+{#            </div>#}
+{##}
+{#            <div class="game-wrapper left">#}
+{#                <a href="#"><div class="gw gw-6"></div></a>#}
+{#                <a href="#"><div class="gw gw-7"></div></a>#}
+{#                <a href="#"><div class="gw gw-8"></div></a>#}
+{#                <a href="#"><div class="gw gw-9"></div></a>#}
+{#                <a href="#"><div class="gw gw-10"></div></a>#}
+{#            </div>#}
+{#        </div>#}
+
+
+
+
 {% endblock  %}

@@ -71,7 +71,7 @@ ul.navbar{
 }
 
 ul.navbar li{
-    width: 250px;
+    width: 200px;
     font-size: 20px;
     margin-top: 12px;
 }
@@ -95,6 +95,11 @@ ul.navbar li a.profile {
     color: #fff;
     font-weight: bold;
     font-size: 30px;
+
+}
+.fas fa-user-circle
+{
+    margin-top: -12px;
 }
 
 

@@ -1,4 +1,6 @@
 from django.shortcuts import render
+
+from homepage.forms import ContactForm
 from homepage.models import Genre
 from game.models import Game, Platform
 from datetime import datetime
@@ -54,5 +56,23 @@ def showgames(request):
     if platform:
         games = games.filter(platform__icontains=platform)
 
-
     return render(request, 'homepage/showgames.html', {'games': games, 'unique_genres': unique_genres, 'less_dategames': lessdategames, 'pcgames': pcgames, 'main_content': main_content})
+
+def nonuser(request):
+    games = Game.objects.all()
+    genre = Genre.objects.all()
+    return render(request, 'homepage/non_user.html', {'games': games, 'genre': genre})
+
+
+def contact(request):
+    if request.method == 'POST':
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            # Save form data to the database
+            form.save()
+            # Redirect to a success page or back to the contact page
+            # return render(request,  'homepage/homepage.html')
+            # {'success_message': 'Thank you for contacting us, we will get back to you soon!'}
+    else:
+        form = ContactForm()
+    return render(request, 'homepage/contact.html', {'form': form})

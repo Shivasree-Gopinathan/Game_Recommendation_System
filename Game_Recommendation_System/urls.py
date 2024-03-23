@@ -16,6 +16,7 @@ Including another URLconf
 """
 from django.conf import settings
 from django.conf.urls.static import static
+from homepage.views import contact, nonuser
 from django.contrib import admin
 from django.urls import path, include
 
@@ -26,6 +27,8 @@ urlpatterns = [
     path('home/',include('homepage.urls')),
     path('game/',include('game.urls')),
     path('games/', views.showgames, name='showgames'),
+    path('contact/',contact, name='contact'),
+    path('nonuser/',nonuser, name='nonuser'),
     path('', include('user.urls')),
 ]
 

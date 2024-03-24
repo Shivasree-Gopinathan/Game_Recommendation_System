@@ -11,7 +11,27 @@ class SignUpForm(UserCreationForm):
 
     class Meta:
         model = User
-        fields = ['username', 'email', 'password1', 'password2']  # password1 and password2 are for password confirmation
+        fields = ('username', 'email', 'password1', 'password2')
+
+    def clean_email(self):
+        email = self.cleaned_data.get('email')
+        if User.objects.filter(email=email).exists():
+            raise forms.ValidationError("This email address is already in use.")
+        return email
+
+    def clean(self):
+        cleaned_data = super().clean()
+        password1 = cleaned_data.get('password1')
+        password2 = cleaned_data.get('password2')
+
+        if password1 and password2:
+            if password1 != password2:
+                raise forms.ValidationError("The passwords do not match.")
+            if len(password1) < 8:
+                raise forms.ValidationError("The password must be at least 8 characters long.")
+            # Add more password conditions as needed
+
+        return cleaned_data
 
 
 class LoginForm(AuthenticationForm):
@@ -26,3 +46,7 @@ class UserProfileForm(forms.ModelForm):
         model = UserProfile
         fields = ['bio', 'avatar', 'favourite_genre']
 
+
+
+class CustomPasswordResetForm(forms.Form):
+    password = forms.CharField(widget=forms.PasswordInput)

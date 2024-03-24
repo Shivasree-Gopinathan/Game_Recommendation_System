@@ -132,6 +132,7 @@ ul.navbar li a:hover:not(.active){
     min-height: 75vh;
     margin: auto;
     padding-top: 150px;
+    padding-bottom: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -330,7 +331,7 @@ ul li a:hover{
     height: 7vh;
     background: #1B1919;
     color: #fff;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     font-size: 0.875rem;
@@ -518,4 +519,10 @@ ul.navbar li a.profile:hover {
     font-size: 1.5rem;
 
 
+}
+
+.visit{
+
+position: absolute;
+right: 10px;
 }

@@ -11,7 +11,10 @@ def home(request):
     games = Game.objects.all()
     # print(games[0].image.url)
     genre = Genre.objects.all()
-    return render(request, 'homepage/homepage.html', {'games': games, 'genre': genre})
+    visit_count = request.session.get('visit_count',0)
+    visit_count += 1
+    request.session['visit_count'] = visit_count
+    return render(request, 'homepage/homepage.html', {'games': games, 'genre': genre,'visit_count':visit_count})
 
 
 def genre(request):
@@ -76,3 +79,4 @@ def contact(request):
     else:
         form = ContactForm()
     return render(request, 'homepage/contact.html', {'form': form})
+

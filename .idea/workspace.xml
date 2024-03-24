@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ca95ec2f-f148-430c-bbdc-9b2267fe3d77" name="Changes" comment="Created requirements.txt file">
+<<<<<<< Updated upstream
       <change afterPath="$PROJECT_DIR$/avatar/WhatsApp_Image_2024-03-15_at_11.45.18_PM_s8OHW4h.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/Game_Recommendation_System.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Game_Recommendation_System.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
@@ -22,6 +23,34 @@
       <change beforePath="$PROJECT_DIR$/templates/homepage/showgames.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/homepage/showgames.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/payment/history.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/payment/history.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/payment/payment.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/payment/payment.html" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/templates/user/password_reset_complete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/user/password_reset_confirm.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/user/password_reset_done.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/user/password_reset_email.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/user/password_reset_form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/user/password_reset_subject" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/static/user/password.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2024-03-14,_10_02 p_m__[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2024-03-14,_3_47 p_m__[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2024-03-14_7_32_p_m__[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2024-03-14_7_32_p_m___Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2024-03-14__10_02p_m___Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2024-03-14__3_47p_m___Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2024-03-18__4_39p_m___Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2024-03-18__4_39p_m___Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024-03-15,_10_36 a_m__[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024-03-15__10_36a_m___Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game_Recommendation_System/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Game_Recommendation_System/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/signup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/static/user/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/user/static/user/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/static/user/signup.css" beforeDir="false" afterPath="$PROJECT_DIR$/user/static/user/signup.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/views.py" afterDir="false" />
+>>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +118,6 @@
   <component name="RunManager">
     <configuration name="Game_Recommendation_System" type="Python.DjangoServer" factoryName="Django server">
       <module name="Game_Recommendation_System" />
-      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -97,7 +125,10 @@
         <env name="DJANGO_SETTINGS_MODULE" value="Game_Recommendation_System.settings" />
       </envs>
       <option name="SDK_HOME" value="" />
+<<<<<<< Updated upstream
       <option name="SDK_NAME" value="Python 3.9 (Game_Recommendation_System)" />
+=======
+>>>>>>> Stashed changes
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -145,8 +176,12 @@
       <workItem from="1710513357236" duration="1577000" />
       <workItem from="1710518764761" duration="3754000" />
       <workItem from="1710998069977" duration="5053000" />
+<<<<<<< Updated upstream
       <workItem from="1711237209516" duration="8015000" />
       <workItem from="1711303596532" duration="2847000" />
+=======
+      <workItem from="1711244072542" duration="3271000" />
+>>>>>>> Stashed changes
     </task>
     <task id="LOCAL-00001" summary="initial login and signup completed">
       <option name="closed" value="true" />
@@ -177,5 +212,21 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="initial login and signup completed" />
     <option name="LAST_COMMIT_MESSAGE" value="initial login and signup completed" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="django-line">
+          <url>file://$PROJECT_DIR$/templates/user/password_reset_form.html</url>
+          <line>1</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/user/views.py</url>
+          <line>8</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

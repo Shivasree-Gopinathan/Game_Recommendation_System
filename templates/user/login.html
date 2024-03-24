@@ -27,6 +27,8 @@
         {% if form.errors %}
             <p class="error-message">Invalid username or password.</p>
         {% endif %}
+        <p style="..." class="reset-link">Forgot Password? <a href="{% url 'password_reset' %}">Reset </a></p>
         <p style="..." class="signup-link">Don't have an account? <a href="{% url 'signup' %}">Sign Up</a></p>
+
     </div>
 {% endblock %}

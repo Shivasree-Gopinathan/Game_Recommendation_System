@@ -16,21 +16,19 @@
 
 
 {% block content %}
-    <div class="background-container"></div>
-
-{#    <header class="title">GameZone</header>#}
-
+    <div class="background-container">
     <header>
             <div class="logo">
                 <i class="fas fa-gamepad"></i>
                 <p>Game Zone</p>
             </div>
             <ul class="navbar">
-                <li><a href="{% url 'home' %}" class="active">Home</a></li>
-                <li><a href="{% url 'showgames' %}">Games</a></li>
-                <li><a href="{% url 'contact' %}">Contact Us</a></li>
-                <li><a href="{% url 'login' %}">Logout</a></li>
-                <li><a href="{% url 'view_profile' %}" class="profile"><i class="fas fa-user-circle"></i></a></li>
+                <li id="center-item"><a href="{% url 'home' %}" class="active">Home</a></li>
+                <li id="center-item"><a href="{% url 'showgames' %}">Games</a></li>
+                <li id="center-item"><a href="{% url 'payment_history' %}">Purchases</a></li>
+                <li id="center-item"><a href="{% url 'contact' %}">Contact Us</a></li>
+                <li id="center-item"><a href="{% url 'login' %}">Logout</a></li>
+                <li id="profile-size"><a href="{% url 'view_profile' %}" class="profile"><i class="fas fa-user-circle"></i></a></li>
             </ul>
      </header>
 
@@ -72,6 +70,7 @@
         <div class="edit-profile-button-container">
             <a href="{% url 'edit_profile' %}" class="edit-profile-button">Edit Profile</a>
         </div>
+    </div>
     </div>
 {% endblock %}
 

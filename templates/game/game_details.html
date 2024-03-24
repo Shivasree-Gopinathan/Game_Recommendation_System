@@ -1,3 +1,273 @@
+{#{% extends 'base.html' %}#}
+{##}
+{#{% load static %}#}
+{##}
+{#{% block extra_head %}#}
+{#    <title>Game Details</title>#}
+{#    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">#}
+{#    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">#}
+{#    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">#}
+{#    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">#}
+{#    <link rel="stylesheet" href="{% static 'game/style.css' %}">#}
+{#{% endblock %}#}
+{##}
+{#{% block content %}#}
+{#    <div class="background-container">#}
+{##}
+{#    <header>#}
+{#            <div class="logo">#}
+{#                <i class="fas fa-gamepad"></i>#}
+{#                <p>Game Zone</p>#}
+{#            </div>#}
+{#            <ul class="navbar">#}
+{#                <li id="center-item"><a href="{% url 'home' %}" class="active">Home</a></li>#}
+{#                <li id="center-item"><a href="{% url 'showgames' %}">Games</a></li>#}
+{#                <li id="center-item"><a>Purchases</a></li>#}
+{#                <li id="center-item"><a href="{% url 'contact' %}">Contact Us</a></li>#}
+{#                <li id="center-item"><a href="{% url 'login' %}">Logout</a></li>#}
+{#                <li id="profile-center"><a href="{% url 'view_profile' %}" class="profile"><i class="fas fa-user-circle"></i></a></li>#}
+{#            </ul>#}
+{#    </header>#}
+{##}
+{##}
+{#    <div class="scroll-content">#}
+{#    <div class="game-details">#}
+{#        <div class="hero">#}
+{#            <img src="{{ game.image.url }}" alt="{{ game.title }}">#}
+{#            <div class="game-content">#}
+{#                <h1>{{ game.title }}</h1>#}
+{#                <div class="game-detail-equality">#}
+{#                    <p class="game-detail-heading">Genre</p>#}
+{#                    <p class="space">:</p>#}
+{#                    <p class="details">{{ game.genre }}</p>#}
+{#                </div>#}
+{#                <br>#}
+{#                <div class="game-detail-equality">#}
+{#                    <p class="game-detail-heading">Platform</p>#}
+{#                    <p class="space">:</p>#}
+{#                    {% for platform in game.platforms.all %}#}
+{#                        <p class="details">{{ platform.name }}, &nbsp;</p>#}
+{#                    {% endfor %}#}
+{#                </div>#}
+{#                <br>#}
+{#                <div class="game-detail-equality">#}
+{#                    <p class="game-detail-heading">Release Date</p>#}
+{#                    <p class="space">:</p>#}
+{#                    <p class="details">{{ game.release_date }}</p>#}
+{#                </div>#}
+{#                <br>#}
+{#                <div class="game-detail-equality">#}
+{#                    <p class="game-detail-heading">Developer</p>#}
+{#                    <p class="space">:</p>#}
+{#                    <p class="details">{{ game.developer }}</p>#}
+{#                </div>#}
+{#                <br>#}
+{#                <div class="game-detail-equality">#}
+{#                    <p class="game-detail-heading">Publisher</p>#}
+{#                    <p class="space">:</p>#}
+{#                    <p class="details">{{ game.publisher }}</p>#}
+{#                </div>#}
+{#                <br>#}
+{#                <div class="game-detail-equality">#}
+{#                    <p id="description">Description</p>#}
+{#                    <p id="space-description">:</p>#}
+{#                    <p class="details">{{ game.description }}</p>#}
+{#                </div>#}
+{#                <br>#}
+{#                <div class="game-detail-equality">#}
+{#                    <p class="game-detail-heading">Average Rating</p>#}
+{#                    <p class="space">:</p>#}
+{#                    <p class="details">{{ game.avg_rating }}</p>#}
+{#                </div>#}
+{#            <br>#}
+{#                <div class="game-detail-equality">#}
+{#                    <p class="game-detail-heading">Price</p>#}
+{#                    <p class="space">:</p>#}
+{#                    <p class="details">{{ game.price }}</p>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{#    <div id="add-all-review">#}
+{#        <button id="add-review-btn" class="btn btn-primary">Add Review</button>#}
+{#        <button id="all-review-btn" class="btn btn-primary">All Reviews</button>#}
+{#        {% if not user_has_paid %}#}
+{#            <button id="payment-btn" class="btn btn-primary">Payment</button>#}
+{#        {% else %}#}
+{#            <button class="btn btn-secondary" disabled>Already Purchased</button>#}
+{#        {% endif %}#}
+{#        <button id="payment-btn" class="btn btn-primary">Payment</button>#}
+{#    </div>#}
+{#    </div>#}
+{#    </div>#}
+{##}
+{#    <section class="section-1">#}
+{#    <div class="section-1-wrapper">#}
+{#        <h1>SIMILAR GAMES</h1>#}
+{#        <br>#}
+{#        <div class="owl-carousel section-1-img">#}
+{#            {% for similar_game in similar_genre_games %}#}
+{#                <a href="{% url 'game_details' game_id=game.id %}">#}
+{#                    <div class="game-card">#}
+{#                        <img src="{{ similar_game.image.url }}" alt="{{ similar_game.title }}">#}
+{#                        <div class="game-info">#}
+{#                            <h2>{{ similar_game.title }}</h2>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </a>#}
+{#            {% endfor %}#}
+{#        </div>#}
+{#    </div>#}
+{#    </section>#}
+{#    </div>#}
+{##}
+{#    <div id="review-popup" class="popup">#}
+{#            <h2>Add Review</h2>#}
+{#            <form id="review-form" method="post" action="{% url 'add_review' game.id %}">#}
+{#                {% csrf_token %}#}
+{#                    <label for="rating">Rating:</label>#}
+{#                    <input type="number" name="rating" required class="input-rating">#}
+{#                    <select class="form-control" id="id_rating" name="rating" required>#}
+{#                        <option value="1">1 - Poor</option>#}
+{#                        <option value="2">2 - Fair</option>#}
+{#                        <option value="3">3 - Average</option>#}
+{#                        <option value="4">4 - Good</option>#}
+{#                        <option value="5">5 - Excellent</option>#}
+{#                    </select>#}
+{#                    <br />#}
+{#                    <label for="review" id="review-label">Review:</label>#}
+{#                    <textarea name="review" rows="4" required class="input-review" id="review"></textarea>#}
+{##}
+{#                <div class="button-container">#}
+{#                    <button type="submit">Submit</button>#}
+{#                    <button id="cancel-review-btn" class="btn btn-secondary">Cancel</button>#}
+{#                </div>#}
+{#            </form>#}
+{#        </div>#}
+{##}
+{#    <div id="all-reviews-popup" class="popup">#}
+{#    <h2>All Reviews</h2>#}
+{#    <div class="reviews-container">#}
+{#        {% for review in game_review %}#}
+{#            <div class="review">#}
+{#                <div class="review-header">#}
+{#                    <span class="username">{{ review.user }}</span>#}
+{#                    <span class="rating">{{ review.stars }}</span>#}
+{#                </div>#}
+{#                <p class="review-text">{{ review.review }}</p>#}
+{#            </div>#}
+{#        {% endfor %}#}
+{#    </div>#}
+{#    <button id="close-reviews-btn" class="btn btn-secondary">Close</button>#}
+{#</div>#}
+{##}
+{#     <!-- Include jQuery (required by Owl Carousel) -->#}
+{#    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>#}
+{#     <!-- Include Owl Carousel JavaScript -->#}
+{#    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>#}
+{##}
+{#     <script>#}
+{##}
+{#       document.getElementById('add-review-btn').addEventListener('click', function() {#}
+{#            document.querySelector('.background-container').classList.add('blur');#}
+{#            document.getElementById('review-popup').style.display = 'block';#}
+            {#document.getElementById('all-reviews-popup').style.display = 'block';#}
+{#        });#}
+{##}
+{#        document.getElementById('all-review-btn').addEventListener('click', function() {#}
+{#            document.querySelector('.background-container').classList.add('blur');#}
+            {#document.getElementById('review-popup').style.display = 'block';#}
+{#            document.getElementById('all-reviews-popup').style.display = 'block';#}
+{#        });#}
+{##}
+{#        document.getElementById('cancel-review-btn').addEventListener('click', function() {#}
+{#            document.querySelector('.background-container').classList.remove('blur');#}
+{#            document.getElementById('review-popup').style.display = 'none';#}
+{#        });#}
+{##}
+{#        document.getElementById('close-reviews-btn').addEventListener('click', function() {#}
+{#            document.querySelector('.background-container').classList.remove('blur');#}
+{#            document.getElementById('all-reviews-popup').style.display = 'none';#}
+{#        });#}
+{##}
+{#        document.addEventListener("DOMContentLoaded", function() {#}
+{#            // Get the payment button element#}
+{#            var paymentBtn = document.getElementById("payment-btn");#}
+{##}
+{#            // Add click event listener to the payment button#}
+{#            paymentBtn.addEventListener("click", function() {#}
+{#                // Get the game title and price from the page elements#}
+{#                var gameTitle = document.getElementById("game-title").innerText;#}
+{#                var gamePrice = document.getElementById("game-price").innerText;#}
+{##}
+{#                // Construct the URL with query parameters for the Django view#}
+{#                // You need to replace 'payment_view' with the actual name you used in your Django urlconf (urls.py)#}
+{#                var baseUrl = "{% url 'payments' %}";#}
+{#                var url = baseUrl + "?game_name=" + encodeURIComponent(gameTitle) + "&amount=" + encodeURIComponent(gamePrice);#}
+{##}
+{#                // Redirect to the URL for processing payment#}
+{#                window.location.href = url;#}
+{#            });#}
+{#        });#}
+{##}
+{#    $(document).ready(function(){#}
+{#        $(".owl-carousel").owlCarousel({#}
+{#            items: 5, // Number of items to display in the carousel#}
+{#            loop: true, // Enable loop#}
+{#            autoplay: true, // Auto-play enabled#}
+{#            autoplayTimeout: 2000, // Auto-play interval (3 seconds)#}
+{#            autoplayHoverPause: true, // Pause on hover#}
+{#            margin: 10, // Add margin between items#}
+{#            responsiveClass:true,#}
+{#            responsive:{#}
+{#                0:{#}
+{#                    items:1#}
+{#                },#}
+{#                576:{#}
+{#                    items:2#}
+{#                },#}
+{#                768:{#}
+{#                    items:3#}
+{#                },#}
+{#                992:{#}
+{#                    items:4#}
+{#                }#}
+{#            }#}
+{#        });#}
+{#    });#}
+{#    </script>#}
+{#{% endblock %}#}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 {% extends 'base.html' %}
 
 {% load static %}
@@ -21,9 +291,8 @@
             </div>
             <ul class="navbar">
                 <li><a href="{% url 'home' %}" class="active">Home</a></li>
-                <li><a href="{% url 'showgames' %}">Games</a></li>
-                <li><a href="{% url 'contact' %}">Contact Us</a></li>
-                <li><a href="{% url 'login' %}">Logout</a></li>
+                <li><a href="#">Games</a></li>
+                <li><a href="#">Review</a></li>
                 <li><a href="{% url 'view_profile' %}" class="profile"><i class="fas fa-user-circle"></i></a></li>
             </ul>
     </header>
@@ -34,7 +303,7 @@
         <div class="hero">
             <img src="{{ game.image.url }}" alt="{{ game.title }}">
             <div class="game-content">
-                <h1>{{ game.title }}</h1>
+                <h1 id="game-title">{{ game.title }}</h1>
                 <div class="game-detail-equality">
                     <p class="game-detail-heading">Genre</p>
                     <p class="space">:</p>
@@ -82,18 +351,17 @@
                 <div class="game-detail-equality">
                     <p class="game-detail-heading">Price</p>
                     <p class="space">:</p>
-                    <p class="details">{{ game.price }}</p>
+                    <p class="details" id="game-price">{{ game.price }}</p>
                 </div>
             </div>
         </div>
     <div id="add-all-review">
         <button id="add-review-btn" class="btn btn-primary">Add Review</button>
         <button id="all-review-btn" class="btn btn-primary">All Reviews</button>
-{#        <button onclick="location.href='{% url 'cart_page' %}'" class="download-button">Download</button>#}
+        <button id="payment-btn" class="btn btn-primary">Payment</button>
     </div>
     </div>
     </div>
-    
     <section class="section-1">
     <div class="section-1-wrapper">
         <h1>SIMILAR GAMES</h1>
@@ -113,7 +381,7 @@
     </div>
     </section>
     </div>
-    
+
     <div id="review-popup" class="popup">
             <h2>Add Review</h2>
             <form id="review-form" method="post" action="{% url 'add_review' game.id %}">
@@ -154,14 +422,15 @@
     <button id="close-reviews-btn" class="btn btn-secondary">Close</button>
 </div>
 
-     <!-- Include jQuery (required by Owl Carousel) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
      <!-- Include Owl Carousel JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
      <script>
 
-       document.getElementById('add-review-btn').addEventListener('click', function() {
+
+
+        document.getElementById('add-review-btn').addEventListener('click', function() {
             document.querySelector('.background-container').classList.add('blur');
             document.getElementById('review-popup').style.display = 'block';
             {#document.getElementById('all-reviews-popup').style.display = 'block';#}
@@ -183,9 +452,27 @@
             document.getElementById('all-reviews-popup').style.display = 'none';
         });
 
+        document.addEventListener("DOMContentLoaded", function() {
+            // Get the payment button element
+            var paymentBtn = document.getElementById("payment-btn");
 
+            // Add click event listener to the payment button
+            paymentBtn.addEventListener("click", function() {
+                // Get the game title and price from the page elements
+                var gameTitle = document.getElementById("game-title").innerText;
+                var gamePrice = document.getElementById("game-price").innerText;
 
-    $(document).ready(function(){
+                // Construct the URL with query parameters for the Django view
+                // You need to replace 'payment_view' with the actual name you used in your Django urlconf (urls.py)
+                var baseUrl = "{% url 'payments' %}";
+                var url = baseUrl + "?game_name=" + encodeURIComponent(gameTitle) + "&amount=" + encodeURIComponent(gamePrice);
+
+                // Redirect to the URL for processing payment
+                window.location.href = url;
+            });
+        });
+
+        $(document).ready(function(){
         $(".owl-carousel").owlCarousel({
             items: 5, // Number of items to display in the carousel
             loop: true, // Enable loop

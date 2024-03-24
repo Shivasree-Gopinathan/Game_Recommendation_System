@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block extra_head %}
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-+0n0xVW2eSR5Zgb2q9WrMuuMSwUx6j7U3DBQk5rVjNExlSMXQz/i5XyJ2c5IQF5k" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href={% static 'user/signup.css' %}>
+{% endblock %}
+
+{% block title %}Payment Page{% endblock %}
+{% block content %}
+    <div class="background-container"></div>
+
+    <div class="title">Payment</div>
+{% if not success_message %}
+<div class="container-signup">
+    <h1>Payment</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="id_game_name">Game Name:</label>
+        <input type="text" id="id_game_name" name="game_name" value="{{ game_name }}" disabled>
+        <br>
+        <label for="id_amount">Amount:</label>
+        <input type="text" id="id_amount" name="amount" value="{{ amount }}" disabled>
+        <br>
+        <label for="id_credit_card_number">Credit Card Number:</label>
+        {{ form.credit_card_number }}
+        {{ form.credit_card_number.errors }}
+        <br>
+        <label for="id_expiry_date">Expiry Date (MM/YY):</label>
+        {{ form.expiry_date }}
+        {{ form.expiry_date.errors }}
+        <br>
+        <label for="id_cvv">CVV:</label>
+        {{ form.cvv }}
+        {{ form.cvv.errors }}
+        <br>
+        <button type="submit">Pay Now</button>
+    </form>
+</div>
+    {% else %}
+        <div class="alert alert-success" role="alert">
+            {{ success_message }}
+        </div>
+        <script>
+            setTimeout(function() {
+                window.location.href = "{% url 'home' %}";  // Redirect to home after 5 seconds
+            }, 3000);
+        </script>
+    {% endif %}
+{% endblock %}

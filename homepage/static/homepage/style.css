@@ -7,7 +7,7 @@
 body{
     background: #1a0327;
     font-family: 'Poppins', sans-serif;
-    height: 250vh;
+    /*height: 250vh;*/
 }
 .hidden {
         display: none;
@@ -56,7 +56,7 @@ ul.navbar{
     z-index: 1;
 }
 ul.navbar li{
-    width: 200px;
+    width: 180px;
     font-size: 20px;
 }
 ul.navbar li a{
@@ -180,7 +180,7 @@ ul.navbar li a:hover:not(.active){
     height: 280px; /* Set the height for each game card */
     overflow: hidden; /* Hide overflow content */
     position: relative; /* Set position to relative for absolute positioning */
-    padding-right: 40px;
+    padding-right: 20px;
 }
 
 .section-1-img .game-card img {
@@ -205,7 +205,7 @@ ul.navbar li a:hover:not(.active){
     opacity: 0; /* Initially hidden */
     color: white;
     margin: 5px 0;
-    font-size: 8px;
+    font-size: 0.8rem;
     text-align: center; /* Center the title */
 }
 
@@ -216,12 +216,11 @@ ul.navbar li a:hover:not(.active){
 
 .section-1{
     width: 100%;
-    height: 130vh;
+    /*height: 130vh;*/
     background: linear-gradient(rgba(0, 0, 0, 0.767),rgba(0, 0, 0, 0.712)), url(streetfighter.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-
 }
 .section-1-wrapper{
     width: 70%;
@@ -244,7 +243,7 @@ ul.navbar li a:hover:not(.active){
     height: 280px; /* Set the height for each game card */
     overflow: hidden; /* Hide overflow content */
     position: relative; /* Set position to relative for absolute positioning */
-    padding-right: 40px;
+    padding-right: 20px;
 }
 
 .section-1-imggenre .genre-card img {
@@ -290,7 +289,6 @@ footer{
     background: linear-gradient(rgba(0, 0, 0, 0.767),rgba(0, 0, 0, 0.712)), url(assassins.jpg);
     display: flex;
     align-items: center;
-
 }
 .footer-body{
     width: 90%;
@@ -509,6 +507,7 @@ ul.navbar li a.profile:hover {
 
     .game-title-overlay-hover h2 {
         margin: 0;
+        font-size: 1.5rem;
     }
 
 .section-2{

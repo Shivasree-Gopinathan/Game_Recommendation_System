@@ -10,13 +10,10 @@ body {
     background : url("images/signup2.png");
     background-size: cover;
     background-position: center;
-    /position: fixed;/
+    position: fixed;
     width: 100%;
     height: 100%;
     z-index: -10;
-    overflow: auto;
-    /*position: fixed;*/
-    /*background-repeat: no-repeat;*/
 }
 
 .title {
@@ -71,7 +68,7 @@ ul.navbar{
 }
 
 ul.navbar li{
-    width: 180px;
+    width: 250px;
     font-size: 20px;
     margin-top: 12px;
 }
@@ -95,17 +92,35 @@ ul.navbar li a.profile {
     color: #fff;
     font-weight: bold;
     font-size: 30px;
-
-}
-.fas fa-user-circle
-{
-    margin-top: -12px;
 }
 
+/*.game-details {*/
+/*    !*background-color: #222;*!*/
+/*    border-radius: 10px;*/
+/*    overflow: hidden;*/
+/*    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
+/*    padding: 40px;*/
+/*    margin-top: 100px;*/
+/*    margin-right: 60px;*/
+/*    margin-left: 60px;*/
+
+/*    background-color: rgba(0, 0, 0, 0.80);*/
+/*    !*overflow-y: auto;*!*/
+/*}*/
+
+/*.game-details img {*/
+/*    !*width: 100%;*!*/
+/*    height: 100%;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    margin: auto 0;*/
+/*    border-radius: 12px;*/
+/*    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
+/*}*/
 
 .game-details {
     border-radius: 10px;
-    overflow: auto;
+    overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 40px;
     margin-top: 100px;
@@ -113,7 +128,7 @@ ul.navbar li a.profile {
     margin-left: 60px;
     background-color: rgba(0, 0, 0, 0.80);
     height: 73%; /* Set a fixed height */
-    /*/overflow-y: auto; ! Enable vertical scrolling !/*/
+    overflow-y: auto; /* Enable vertical scrolling */
 }
 
 .game-details img {
@@ -329,80 +344,4 @@ button[id="cancel-review-btn"]{
     margin-right: 10px;
     margin-left: 10px;
     font-size: 16px;
-}
-
-.section-1-img {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 0;
-    /*padding-right: 40px;*/
-}
-
-.section-1 h1 {
-    color: #FEC53A;
-    padding-top: 50px;
-    font-size: 2rem;
-}
-
-.section-1-img .game-card {
-    /*width: 280px;*/
-    height: 300px; /* Set the height for each game card */
-    overflow: hidden; /* Hide overflow content */
-    position: relative; /* Set position to relative for absolute positioning */
-    padding: 10px;
-}
-
-.section-1-img .game-card .game-info {
-    position: absolute; /* Position game info absolutely */
-    bottom: 0; /* Align game info to the bottom */
-    left: 0; /* Align game info to the left */
-    width: 100%; /* Full width */
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
-    padding: 10px; /* Add padding */
-    box-sizing: border-box; /* Include padding in width/height */
-    transition: opacity 0.3s ease; /* Add transition for hover effect */
-    opacity: 0; /* Initially hidden */
-    color: white;
-    margin: 5px 0;
-    font-size: 12px;
-    text-align: center; /* Center the title */
-}
-
-.section-1-img .game-card img {
-    width: 100%; /* Ensure the image fills the container */
-    height: 100%; /* Ensure the image fills the container */
-    transition: transform 0.3s ease; /* Add transition for hover effect */
-}
-
-.section-1-img .game-card:hover img {
-    transform: scale(1.1); /* Scale up the image on hover */
-}
-
-.section-1-img .game-card:hover .game-info {
-    opacity: 1; /* Show game info on hover */
-}
-
-.section-1-wrapper{
-    width: 70%;
-    margin: auto;
-    padding-bottom: 100px;
-}
-
-.section-1 {
-    width: 100%;
-    /*height: 100vh;*/
-    background: linear-gradient(rgba(0, 0, 0, 0.767),rgba(0, 0, 0, 0.712)), url(images/streetfighter.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    margin-top: 50px;
-}
-
-#center-item {
-    padding-top: 6px;
-}
-
-#profile-center {
-    padding-bottom: 10px;
 }

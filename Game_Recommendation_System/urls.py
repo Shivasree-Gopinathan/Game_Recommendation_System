@@ -29,6 +29,7 @@ urlpatterns = [
     path('games/', views.showgames, name='showgames'),
     path('contact/',contact, name='contact'),
     path('nonuser/',nonuser, name='nonuser'),
+    path('', include('payment.urls')),
     path('', include('user.urls')),
 ]
 

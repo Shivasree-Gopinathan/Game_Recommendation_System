@@ -1,0 +1,106 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extra_head %}
+    <title>Game Details</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'game/history.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div class="background-container">
+    <header>
+            <div class="logo">
+                <i class="fas fa-gamepad"></i>
+                <p>Game Zone</p>
+            </div>
+            <ul class="navbar">
+                <li id="center-item"><a href="{% url 'home' %}" class="active">Home</a></li>
+                <li id="center-item"><a href="{% url 'showgames' %}">Games</a></li>
+                <li id="center-item"><a href="{% url 'payment_history' %}">Purchases</a></li>
+                <li id="center-item"><a href="{% url 'contact' %}">Contact Us</a></li>
+                <li id="center-item"><a href="{% url 'login' %}">Logout</a></li>
+                <li id="profile-size"><a href="{% url 'view_profile' %}" class="profile"><i class="fas fa-user-circle"></i></a></li>
+            </ul>
+    </header>
+
+    <div class="payment-details">
+        <h2 class="header">Purchased Games</h2>
+            {% if payments %}
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Game Title</th>
+                            <th>Amount</th>
+                            <th>Card Number</th>
+                            <th>Payment Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for payment in payments %}
+                            <tr>
+                                <td>{{ payment.game_name }}</td>
+                                <td>{{ payment.amount }}</td>
+                                <td>**** **** **** {{ payment.card_last_four}}</td>
+                                <td>{{ payment.payment_date|date:"Y-m-d H:i" }}</td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            {% else %}
+                <p>No payment history found.</p>
+            {% endif %}
+        </div>
+    </div>
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{##}
+{#{% block content %}#}
+{#<div class="container">#}
+{#    <h2>Payment History</h2>#}
+{#    {% if payments %}#}
+{#    <table class="table">#}
+{#        <thead>#}
+{#            <tr>#}
+{#                <th>Game Title</th>#}
+{#                <th>Amount</th>#}
+{#                <th>Card Number</th>#}
+{#                <th>Payment Date</th>#}
+{#            </tr>#}
+{#        </thead>#}
+{#        <tbody>#}
+{#            {% for payment in payments %}#}
+{#            <tr>#}
+{#                <td>{{ payment.game_name }}</td>#}
+{#                <td>{{ payment.amount }}</td>#}
+{#                <td>**** **** **** {{ payment.card_last_four}}</td>#}
+{#                <td>{{ payment.payment_date|date:"Y-m-d H:i" }}</td>#}
+{#            </tr>#}
+{#            {% endfor %}#}
+{#        </tbody>#}
+{#    </table>#}
+{#    {% else %}#}
+{#    <p>No payment history found.</p>#}
+{#    {% endif %}#}
+{#</div>#}
+{#{% endblock %}#}

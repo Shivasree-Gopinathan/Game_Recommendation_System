@@ -48,7 +48,7 @@ ul.navbar{
     z-index: 1;
 }
 ul.navbar li{
-    width: 200px;
+    width: 180px;
     font-size: 20px;
 }
 ul.navbar li a{

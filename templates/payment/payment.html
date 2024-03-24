@@ -32,7 +32,8 @@
         {{ form.expiry_date.errors }}
         <br>
         <label for="id_cvv">CVV:</label>
-        {{ form.cvv }}
+{#        {{ form.cvv }}#}
+        <input type="password" id="id_cvv" name="cvv" />
         {{ form.cvv.errors }}
         <br>
         <button type="submit">Pay Now</button>

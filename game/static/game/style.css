@@ -400,9 +400,10 @@ button[id="cancel-review-btn"]{
 }
 
 #center-item {
-    padding-top: 6px;
+    padding-top: 8px;
 }
 
-#profile-center {
-    padding-bottom: 10px;
+#profile-size {
+    padding-bottom: 15px;
 }
+
